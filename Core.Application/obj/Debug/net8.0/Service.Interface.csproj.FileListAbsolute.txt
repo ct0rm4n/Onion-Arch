@@ -1,0 +1,16 @@
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\bin\Debug\net8.0\Service.Interface.deps.json
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\bin\Debug\net8.0\Service.Interface.dll
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\bin\Debug\net8.0\Service.Interface.pdb
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\bin\Debug\net8.0\Core.Domain.dll
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\bin\Debug\net8.0\Core.Domain.pdb
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\obj\Debug\net8.0\Service.Interface.csproj.AssemblyReference.cache
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\obj\Debug\net8.0\Service.Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\obj\Debug\net8.0\Service.Interface.AssemblyInfoInputs.cache
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\obj\Debug\net8.0\Service.Interface.AssemblyInfo.cs
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\obj\Debug\net8.0\Service.Interface.csproj.CoreCompileInputs.cache
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\obj\Debug\net8.0\Service.Interface.sourcelink.json
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\obj\Debug\net8.0\Service.Interface.csproj.CopyComplete
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\obj\Debug\net8.0\Service.Interface.dll
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\obj\Debug\net8.0\refint\Service.Interface.dll
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\obj\Debug\net8.0\Service.Interface.pdb
+C:\Users\usuario\source\repos\BlazorApp3\Core.Application\obj\Debug\net8.0\ref\Service.Interface.dll

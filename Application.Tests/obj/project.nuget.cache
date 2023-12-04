@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WSdpo/hXIZkmm0T5lyOrmbXoFcCyk3QCComE0qZcmntJLBSI3/WeFQ1p3WJj23eNjz/nLbV61fGol/zirUIMBA==",
+  "dgSpecHash": "+HNLYaHjPaX+aK+tyPKUZfN+r7PWgXuXIIkHNTc0l+PKtQRbzHdsHJ39dyc9AmLrB8IX+n28cCtAWdIBKmOWZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Application.Tests\\Application.Tests.csproj",
+  "projectFilePath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Application.Tests\\Tests.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usuario\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",

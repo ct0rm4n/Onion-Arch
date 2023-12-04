@@ -1,0 +1,6 @@
+C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\obj\Debug\net8.0\Service.Rabbit.Consumer.csproj.AssemblyReference.cache
+C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\obj\Debug\net8.0\Service.Rabbit.Consumer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\obj\Debug\net8.0\Service.Rabbit.Consumer.AssemblyInfoInputs.cache
+C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\obj\Debug\net8.0\Service.Rabbit.Consumer.AssemblyInfo.cs
+C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\obj\Debug\net8.0\Service.Rabbit.Consumer.csproj.CoreCompileInputs.cache
+C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\obj\Debug\net8.0\Service.Rabbit.Consumer.sourcelink.json

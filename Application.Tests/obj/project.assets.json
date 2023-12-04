@@ -5524,9 +5524,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Application.Tests\\Application.Tests.csproj",
-      "projectName": "Application.Tests",
-      "projectPath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Application.Tests\\Application.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Application.Tests\\Tests.Server.csproj",
+      "projectName": "Tests.Server",
+      "projectPath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Application.Tests\\Tests.Server.csproj",
       "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Application.Tests\\obj\\",
       "projectStyle": "PackageReference",
