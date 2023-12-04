@@ -1,0 +1,64 @@
+﻿@inject IJSRuntime js;
+@inject Services.IAppRoleService servicesRoleUser
+@using Application.ViewModels;
+@using ViewModels.AppRole;
+
+<div class="modal" tabindex="-1" role="dialog" id="roleModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@Cabecalho</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <EditForm Model="@RoleObj" FormName="RoleSave" OnValidSubmit="@HandleValidSubmit">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+                    <div class="form-group mt-2 mb-2">
+                        <label for="Name">Nome</label>
+                        <input type="hidden" @bind-value="@RoleObj.Id" />
+                        <input id="Name" class="form-control" @bind-value="@RoleObj.Name"/>
+                        <ValidationMessage For="@(() => RoleObj.Name)" />
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Envia</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancela</button>
+                </EditForm>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public AppRoleVM RoleObj { get; set; }
+
+    [Parameter]
+    public RenderFragment Cabecalho { get; set; }
+
+    [Parameter]
+    public Action AlteracaoDados { get; set; }
+
+    List<string> TarefaStatus = new List<string>() { "Nova", "Em andamento", "Concluída" };
+    
+    private async Task CloseTarefaModal()
+    {
+        await js.InvokeAsync<object>("CloseModal", "roleModal");
+    }
+
+    private async void HandleValidSubmit()
+    {
+        if (RoleObj.Id == 0)
+        {
+            await servicesRoleUser.RegisterRoleAsync(RoleObj);
+        }
+        else
+        {
+            await servicesRoleUser.RegisterRoleAsync(RoleObj);
+        }
+        await CloseTarefaModal();
+        AlteracaoDados?.Invoke();
+    }
+}

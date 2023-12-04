@@ -1,0 +1,91 @@
+﻿@page "/ItemList"
+@using Application.ViewModels.ToDo
+@inject Services.IToDoService service
+@inject IJSRuntime js;
+@rendermode InteractiveServer
+
+<h3>Lista de Items</h3>
+
+@if (items == null)
+{
+    <p><em>Carregando...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Status</th>
+                <th>Previsão</th>
+                <th>Edita</th>
+                <th>Deleta</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in items)
+            {
+                <tr>
+                    <td>@item.Nome</td>
+                    <td>@item.Progress</td>
+                    <td>@item.ConclusaoEm?.ToShortDateString() : @string.Empty</td>
+                    <td><Input type="button" class="btn btn-primary" @onclick="(() => PreparaEdicao(item))" data-toggle="modal" data-target="#itemModal" value="Edita" /></td>
+                    <td><input type="button" class="btn btn-danger" @onclick="(() => PreparaExclusao(item))" data-toggle="modal" data-target="#confirmaExclusaoModal" value="Deleta" /></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<div>
+    <input type="button" data-toggle="modal" data-target="#itemModal" 
+    class="btn btn-primary" value="Nova Item" @onclick="(() => InitializeItemObject())" />
+</div>
+
+<ConfirmaDialog OnClick="@Delete" />
+<ItemDetalhes itemObject=itemObject AlteracaoDados="@AlteracaoDados">
+    <Cabecalho>@cabecalho</Cabecalho>
+</ItemDetalhes>
+
+@code {
+    List<ToDoVM> items;
+    ToDoVM itemObject = new ToDoVM();
+    string cabecalho = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        items = await service.GetList();
+    }
+    
+    private void PreparaEdicao(ToDoVM item)
+    {
+        cabecalho = "Edita Item";
+        itemObject = item;
+    }
+
+    private void PreparaExclusao(ToDoVM task)
+    {
+        itemObject = task;
+    }
+
+    private void InitializeItemObject()
+    {
+        itemObject = new ToDoVM();
+        itemObject.ConclusaoEm = DateTime.Now;
+        cabecalho = "Nova Item";
+    }
+    private async void AlteracaoDados()
+    {
+        Thread.Sleep(2000);
+        items = await service.GetList();
+        StateHasChanged();
+    }
+
+    private async Task Delete()
+    {
+        //var task = await service.Delete(itemObject.Id);
+        await js.InvokeAsync<object>("CloseModal", "confirmaExclusaoModal");
+        items = await service.GetList();
+        itemObject = new ToDoVM();
+    }
+}
+

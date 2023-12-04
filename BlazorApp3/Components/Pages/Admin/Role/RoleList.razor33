@@ -1,0 +1,90 @@
+﻿@page "/roles"
+@inject IJSRuntime js;
+@inject Services.IAppRoleService servicesRoleUser
+@using ViewModels.AppRole
+
+<h3>Lista de Tarefas</h3>
+
+@if (roles == null)
+{
+    <p><em>Carregando...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th></th>
+                <th>Edita</th>
+                <th>Deleta</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tarefa in roles)
+            {
+                <tr>
+                    <td>@tarefa.Id</td>
+                    <td>@tarefa.Name</td>
+                    <td><input type="button" class="btn btn-primary" @onclick="(() => PreparaEdicao(tarefa))" data-toggle="modal" data-target="#roleModal" value="Edita" /></td>
+                    <td><input type="button" class="btn btn-danger" @onclick="(() => PreparaExclusao(tarefa))" data-toggle="modal" data-target="#confirmaExclusaoModal" value="Deleta" /></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<div>
+    <input type="button" data-toggle="modal" data-target="#roleModal" 
+    class="btn btn-primary" value="Nova role" @onclick="(() => InitializeTarefaObject())" />
+</div>
+
+
+<ConfirmaDialog OnClick="@Delete" />
+
+<RoleModal RoleObj=rolesObject AlteracaoDados="@AlteracaoDados">
+    <Cabecalho>@cabecalho</Cabecalho>
+</RoleModal>
+
+@code {
+    List<AppRoleVM> roles;
+    AppRoleVM rolesObject = new AppRoleVM();
+    string cabecalho = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var list = servicesRoleUser.GetAll().Result;
+        roles = (list.Data.AsQueryable<AppRoleVM>()).ToList();//new List<AppRoleVM>();
+    }
+    
+    private void PreparaEdicao(AppRoleVM tarefa)
+    {
+        cabecalho = "Edita Tarefa";
+        rolesObject = tarefa;
+    }
+
+    private void PreparaExclusao(AppRoleVM task)
+    {
+        rolesObject = task;
+    }
+
+    private void InitializeTarefaObject()
+    {
+        rolesObject = new AppRoleVM();
+        //rolesObject.ConclusaoEm = DateTime.Now;
+        cabecalho = "Nova Tarefa";
+    }
+    private async void AlteracaoDados()
+    {
+        roles = (servicesRoleUser.GetAll().Result.Data.AsQueryable<AppRoleVM>()).ToList();
+        StateHasChanged();
+    }
+
+    private async Task Delete()
+    {
+        await servicesRoleUser.DeleteAsync(rolesObject.Id);
+        await js.InvokeAsync<object>("CloseModal", "confirmaExclusaoModal");        
+        roles = (servicesRoleUser.GetAll().Result.Data.AsQueryable<AppRoleVM>()).ToList();
+        rolesObject = new AppRoleVM();
+    }
+}
