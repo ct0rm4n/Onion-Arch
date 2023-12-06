@@ -13,14 +13,7 @@
 
   <ItemGroup> 
     <None Remove="Components\Account\Pages\Manage\Email.razor~RFb7edbb4.TMP" /> 
-    <None Remove="Components\Pages\Admin\Role\RoleList.razor33" /> 
-    <None Remove="Components\Pages\Admin\Role\RoleModal.razor33" /> 
     <None Remove="Program.cs~RF241fd928.TMP" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Components\Pages\Admin\Role\RoleList.razor33" />
-    <Content Include="Components\Pages\Admin\Role\RoleModal.razor33" />
   </ItemGroup>
   <ItemGroup> 
     <None Include="Components\Account\Pages\ConfirmEmail.razor" />

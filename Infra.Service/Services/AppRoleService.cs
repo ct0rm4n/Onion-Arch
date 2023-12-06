@@ -4,6 +4,7 @@ using Application.Repositories;
 using ViewModels.AppRole;
 using Wrappers;
 using Domain.Entities.Concrates;
+using Domain.Enums;
 namespace Services
 {
     public class AppRoleService : GenericService<AppRoleSaveVM, AppRoleVM, AppRole>, IAppRoleService
@@ -16,9 +17,11 @@ namespace Services
         }
 
         //get all roles 
-        public async Task<Result<List<AppRoleVM>>> GetAll()
+        public async Task<Result<List<AppRoleVM>>> GetAll(bool deleted = false)
         {
-            List<AppRole> appRoles = _repository.GetAllAsIQueryable().ToList();
+            List<AppRole> appRoles = _repository.GetAllAsIQueryable().Where( x=> !x.Status.Equals(Status.Deleted)).ToList();
+            if(deleted)
+                appRoles = _repository.GetAllAsIQueryable().ToList();
             List<AppRoleVM> appRoleVMs = _mapper.Map<List<AppRoleVM>>(appRoles);
             return Result<List<AppRoleVM>>.Success(appRoleVMs);
         }

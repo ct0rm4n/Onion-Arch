@@ -7,7 +7,7 @@ namespace Services
 {
     public interface IAppRoleService : IGenericService<AppRoleSaveVM, AppRoleVM, AppRole>
     {
-        public Task<Result<List<AppRoleVM>>> GetAll();
+        public Task<Result<List<AppRoleVM>>> GetAll(bool deleted = false);
         public Task<Result<AppRoleVM>> RegisterRoleAsync(AppRoleVM role);
     }
 }
