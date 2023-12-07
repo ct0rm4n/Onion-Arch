@@ -17,21 +17,17 @@ builder.Services.AddWebLayerInjections();
 builder.Services.AddSession();
 builder.Services.AddIdentityService();
 builder.Services.AddApplicationLayerInjections();
-
+builder.Services.AddScoped<StartupInject>();
+var inject = new StartupInject();
+inject.ConfigureServices(builder);
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
-
 builder.Host.ConfigureServices(x => x.AddAutofac()).UseServiceProviderFactory(new AutofacServiceProviderFactory()).ConfigureContainer<ContainerBuilder>(builder =>
 {
     builder.RegisterModule(new AutofacPersistanceModule());
     builder.RegisterModule(new AutofacInnerInfrastructureModule());
 });
 
-builder.Services.AddScoped<StartupInject>();
-var inject = new StartupInject();
-inject.ConfigureServices(builder);
-
 builder.Services.AddBlazorBootstrap();//todo
-
 WebApplication app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

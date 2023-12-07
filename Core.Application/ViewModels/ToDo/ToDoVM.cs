@@ -8,6 +8,7 @@ namespace Application.ViewModels.ToDo
         public int? Id { get; set; }
         [Required(ErrorMessage = "error the name is required")]
         public string? Nome { get; set; }
+        public string? Description { get; set; }
         public string? Progress { get; set; }
         public DateTime? ConclusaoEm { get; set; }
     }

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -11,10 +11,6 @@
     <Content Remove="Components\Pages\Admin\Catalog\Category.razor" />
   </ItemGroup>
 
-  <ItemGroup> 
-    <None Remove="Components\Account\Pages\Manage\Email.razor~RFb7edbb4.TMP" /> 
-    <None Remove="Program.cs~RF241fd928.TMP" />
-  </ItemGroup>
   <ItemGroup> 
     <None Include="Components\Account\Pages\ConfirmEmail.razor" />
     <None Include="Components\Account\Pages\ConfirmEmailChange.razor" />
@@ -254,12 +250,12 @@
     <ProjectReference Include="..\Infra.Persistence\Infra.Persistence.csproj" />
     <ProjectReference Include="..\Infra.Service\Service.Application.csproj" />
     <ProjectReference Include="..\UI.Client\UI.Client.csproj" />
+    <PackageReference Include="Blazored.TextEditor" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Components\Pages\Admin\User\" />
     <Folder Include="Components\Pages\Client\" />
   </ItemGroup>
     

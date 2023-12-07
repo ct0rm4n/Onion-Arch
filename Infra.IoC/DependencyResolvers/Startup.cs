@@ -3,6 +3,7 @@ using Infraestrutura.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Services.Account;
@@ -18,6 +19,10 @@ namespace Infra.IoC.DependencyResolvers
 
         public void ConfigureServices(WebApplicationBuilder builder)
         {
+            builder.Services.AddScoped<UserManager<AppUser>>();
+            builder.Services.AddScoped<SignInManager<AppUser>>();
+            builder.Services.AddScoped<RoleManager<AppRole>>();
+
             builder.Services.AddScoped<IdentityUserAccessor>();
             builder.Services.AddScoped<IdentityRedirectManager>();
             builder.Services.AddScoped<AuthenticationStateProvider, PersistingRevalidatingAuthenticationStateProvider>();

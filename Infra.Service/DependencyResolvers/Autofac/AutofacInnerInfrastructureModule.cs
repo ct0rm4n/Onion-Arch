@@ -1,5 +1,7 @@
 ﻿using Autofac;
+using Domain.Entities.Concrates;
 using Infraestrutura.Context;
+using Microsoft.AspNetCore.Identity;
 using Services;
 using System.Reflection;
 using Module = Autofac.Module;
@@ -19,6 +21,7 @@ namespace DependencyResolvers.Autofac
             Assembly repoServiceAssembly = Assembly.GetAssembly(typeof(AppDbContext));
                         
             builder.RegisterType<ProductService>().As<IProductService>().InstancePerLifetimeScope();
+            //builder.RegisterType<AppRoleStore>().As<IRoleStore<AppRole>>().InstancePerLifetimeScope();
             builder.RegisterType<AppUserService>().As<IAppUserService>().InstancePerLifetimeScope();
             builder.RegisterType<AppRoleService>().As<IAppRoleService>().InstancePerLifetimeScope();
             builder.RegisterType<CategoryService>().As<ICategoryService>().InstancePerLifetimeScope();

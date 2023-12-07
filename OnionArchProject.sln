@@ -37,7 +37,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.IoC", "Infra.IoC\Infr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Rabbit.Consumer", "Service.Rabbit.Consumer\Service.Rabbit.Consumer.csproj", "{468DEDEF-DB50-48DC-85AA-775625AC51A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.HangFire", "API.HangFire\API.HangFire.csproj", "{1AC7F97D-3880-42B4-B258-68DA8D61DDF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.HangFire", "API.HangFire\API.HangFire.csproj", "{1AC7F97D-3880-42B4-B258-68DA8D61DDF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

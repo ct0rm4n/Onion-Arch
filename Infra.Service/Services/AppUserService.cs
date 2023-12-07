@@ -11,6 +11,7 @@ using ViewModels.AppUser;
 using Wrappers;
 using Domain.Entities.Concrates;
 using Domain.Enums;
+using System.Collections.Generic;
 
 namespace Services
 {
@@ -18,18 +19,18 @@ namespace Services
     {
         protected readonly UserManager<AppUser> _userManager;
         protected readonly SignInManager<AppUser> _signInManager;
-        protected readonly RoleManager<AppRole> _roleManager;
+        //protected readonly RoleManager<AppRole> _roleManager;
         protected readonly IHttpContextAccessor _httpContextAccessor;
         //protected readonly IEMailService _eMailService;
         protected readonly IAppUserRepository _appUserRepository;
 
-        public AppUserService(IGenericRepository<AppUser> repository, IMapper mapper, UserManager<AppUser> userManager, /*IEMailService eMailService,*/ SignInManager<AppUser> signInManager, RoleManager<AppRole> roleManager, IHttpContextAccessor httpContextAccessor, IAppUserRepository appUserRepository) : base(repository, mapper)
+        public AppUserService(IGenericRepository<AppUser> repository, IMapper mapper, UserManager<AppUser> userManager, /*IEMailService eMailService,*/ SignInManager<AppUser> signInManager, IHttpContextAccessor httpContextAccessor, IAppUserRepository appUserRepository) : base(repository, mapper)
         {
             _userManager = userManager;
            // _eMailService = eMailService;
             _userManager.RegisterTokenProvider(TokenOptions.DefaultProvider, new EmailTokenProvider<AppUser>());
             _signInManager = signInManager;
-            _roleManager = roleManager;
+            //_roleManager = roleManager;
             _httpContextAccessor = httpContextAccessor;
             _appUserRepository = appUserRepository;
         }
@@ -134,7 +135,7 @@ namespace Services
         //get app users with its roles
         public async Task<Result<List<AppUserVM>>> GetAllAppUsersWithRoles()
         {
-            List<AppUser> appUsers = await _appUserRepository.GetAllAppUsersWithRoles();
+            List<AppUser> appUsers =  _repository.GetAllAsIQueryable().ToList();
             List<AppUserVM> appUserVMs = _mapper.Map<List<AppUserVM>>(appUsers);
             return Result<List<AppUserVM>>.Success(appUserVMs);
         }
@@ -142,9 +143,9 @@ namespace Services
         //get app user with role and set isAssigned as true 
         public async Task<Result<AppUserVM>> GetAppUserWithRoles(int id)
         {
-            AppUser appUser = await _appUserRepository.GetAppUserWithRoles(id);
+            AppUser appUser = await _appUserRepository.FirstOrDefaultAsync(x => x.Id == id);//GetAppUserWithRoles(id);
             AppUserVM appUserVM = _mapper.Map<AppUserVM>(appUser);
-            List<AppRoleVM>? roles = (await GetAllRoles()).Data;
+            List<AppRoleVM>? roles = new List<AppRoleVM>();//(await GetAllRoles()).Data;
             foreach (int item in appUserVM.AppUserRoleVMs.Select(x => x.RoleId))
                 if (roles.Select(x => x.Id).Contains(item))
                     roles.FirstOrDefault(x => x.Id == item).isAssigned = true;
@@ -152,13 +153,13 @@ namespace Services
             return Result<AppUserVM>.Success(appUserVM);
         }
 
-        //get all roles 
-        public async Task<Result<List<AppRoleVM>>> GetAllRoles()
-        {
-            List<AppRole> appRoles = await _roleManager.Roles.ToListAsync();
-            List<AppRoleVM> appRoleVMs = _mapper.Map<List<AppRoleVM>>(appRoles);
-            return Result<List<AppRoleVM>>.Success(appRoleVMs);
-        }
+        ////get all roles 
+        //public async Task<Result<List<AppRoleVM>>> GetAllRoles()
+        //{
+        //    List<AppRole> appRoles = await _roleManager.Roles.ToListAsync();
+        //    List<AppRoleVM> appRoleVMs = _mapper.Map<List<AppRoleVM>>(appRoles);
+        //    return Result<List<AppRoleVM>>.Success(appRoleVMs);
+        //}
 
         //update app user role
         public async Task<Result<AppUserVM>> UpdateAppUserRole(AppUserVM viewModel)

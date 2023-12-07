@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4fnDn62xUvSFdet4X6nhMQXm4lxC5JAWYSkGjSY7EoMffTtSpbrEbG9+nKlXQZLgxD3ylN9rkjEbWVWbGh6IUw==",
+  "dgSpecHash": "4j72zwsp3BxtPtKktT0ziHGY7RwcKv3u4sYMwdphq862wI9OvebKLPizOBrroN5RvJEiD3b7XdtxuUmkddQ6ew==",
   "success": true,
   "projectFilePath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\UI.Server\\UI.Server.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\usuario\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\blazor.bootstrap.1.10.4.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\blazored.texteditor\\1.1.0\\blazored.texteditor.1.1.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",

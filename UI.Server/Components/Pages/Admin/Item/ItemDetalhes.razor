@@ -1,6 +1,9 @@
 ﻿@inject IJSRuntime js;
 @using Application.ViewModels.ToDo
+@using Blazored.TextEditor
+@using FluentValidation
 @inject Services.IToDoService service
+@inject IValidator<ToDoVM> Validator
 
 <div class="modal" tabindex="-1" role="dialog" id="itemModal">
     <div class="modal-dialog" role="document">
@@ -12,7 +15,8 @@
                 </button>
             </div>
             <div class="modal-body">
-                <EditForm Model="@itemObject" Enhance EditContext="_editContext" formname="ToDoVM" OnValidSubmit="@HandleSubmit">
+                <EditForm Model="@itemObject" Enhance EditContext="_editContext" formname="ToDoVM"
+                           OnValidSubmit="@HandleSubmit">
                     <DataAnnotationsValidator />
                     <ValidationSummary />
                     <div class="form-group mt-2 mb-2">
@@ -21,6 +25,40 @@
                          <InputText id="Nome" class="form-control" @bind-Value="@itemObject.Nome" />
                         <ValidationMessage For="@(() => itemObject.Nome)" />
                     </div>
+                     <BlazoredTextEditor @ref="@richEditor">
+                        <ToolbarContent>
+                            <select class="ql-header">
+                                <option selected=""></option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                            </select>
+                            <span class="ql-formats">
+                                <button class="ql-bold"></button>
+                                <button class="ql-italic"></button>
+                                <button class="ql-underline"></button>
+                                <button class="ql-strike"></button>
+                            </span>
+                            <span class="ql-formats">
+                                <select class="ql-color"></select>
+                                <select class="ql-background"></select>
+                            </span>
+                            <span class="ql-formats">
+                                <button class="ql-list" value="ordered"></button>
+                                <button class="ql-list" value="bullet"></button>
+                            </span>
+                            <span class="ql-formats">
+                                <button class="ql-link"></button>
+                            </span>
+                        </ToolbarContent>
+                        <EditorContent >
+                            <h4>This Toolbar works with HTML</h4>
+                             @itemObject.Description
+                        </EditorContent>
+                     </BlazoredTextEditor>
+                    <ValidationMessage For="@(() => itemObject.Description)" />
                     <div class="form-group mb-2">
                         <label for="status">Status</label>
                          <InputSelect id="Progress" class="form-control" @bind-Value="itemObject.Progress">
@@ -53,7 +91,7 @@
     [CascadingParameter] private EditContext _editContext { get; set; } = default!;
     [Parameter]//[SupplyParameterFromForm(Name = "itemObject", FormName = "itemObject")]
     public ToDoVM itemObject { get; set; } = new ToDoVM();
-
+    BlazoredTextEditor richEditor = default!;
     [Parameter]
     public RenderFragment Cabecalho { get; set; }
 
@@ -67,16 +105,31 @@
         await js.InvokeAsync<object>("CloseModal", "itemModal");
     }
 
-    public async Task HandleValidSubmit()
-    {    
-        await CloseItemModal();
-        AlteracaoDados?.Invoke();
+
+    public async Task HandleInValidSubmit(EditContext editContext)
+    {
+        await UpdateDescription();
+        bool formIsValid = editContext.Validate();        
+        var validationResult = await Validator.ValidateAsync(itemObject);
+        if (validationResult.IsValid)
+        {
+            await HandleSubmit();
+        }
+        else
+        {
+            return;
+        }        
     }
     public async Task HandleSubmit()
     {
-
+        await UpdateDescription();
         await service.CreateOrUpdate(itemObject);
         await CloseItemModal();
         AlteracaoDados?.Invoke();
+    }
+    public async Task UpdateDescription()
+    {
+        itemObject.Description = await this.richEditor.GetHTML();
+        StateHasChanged();
     }
 }

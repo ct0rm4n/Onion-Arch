@@ -216,3 +216,4 @@ C:\Users\usuario\source\repos\BlazorApp3\UI.Server\bin\Debug\net8.0\Service.Inte
 C:\Users\usuario\source\repos\BlazorApp3\UI.Server\bin\Debug\net8.0\Infra.IoC.pdb
 C:\Users\usuario\source\repos\BlazorApp3\UI.Server\bin\Debug\net8.0\Service.Application.pdb
 C:\Users\usuario\source\repos\BlazorApp3\UI.Server\bin\Debug\net8.0\Service.Interface.pdb
+C:\Users\usuario\source\repos\BlazorApp3\UI.Server\bin\Debug\net8.0\Blazored.TextEditor.dll

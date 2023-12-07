@@ -741,6 +741,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\UI.Server\\wwwroot\\css\\datatable\\jquery.dataTables.min.css",
+      "PackagePath": "staticwebassets\\css\\datatable\\jquery.dataTables.min.css"
+    },
+    {
       "Id": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\UI.Server\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
@@ -779,6 +783,10 @@
     {
       "Id": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\UI.Server\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\UI.Server\\wwwroot\\datatable\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\datatable\\jquery.dataTables.min.js"
     },
     {
       "Id": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\UI.Server\\wwwroot\\favicon.png",

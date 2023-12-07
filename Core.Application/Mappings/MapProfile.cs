@@ -89,6 +89,8 @@ namespace Mapping
                 .ForMember(dest => dest.AppUserVM, act => act.MapFrom(src => src.User))
                 .ForMember(dest => dest.AppRoleVM, act => act.MapFrom(src => src.Role))
                 .ReverseMap();
+            #endregion
+            #region ToDo Mapping
             CreateMap<ToDo, ToDoVM>()
                 .ReverseMap();
             #endregion

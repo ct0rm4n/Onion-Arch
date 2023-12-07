@@ -1,5 +1,6 @@
 ﻿@page "/ItemList"
 @using Application.ViewModels.ToDo
+@using Microsoft.AspNetCore.Components.QuickGrid
 @inject Services.IToDoService service
 @inject IJSRuntime js;
 @rendermode InteractiveServer
@@ -12,34 +13,51 @@
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Item</th>
-                <th>Status</th>
-                <th>Previsão</th>
-                <th>Edita</th>
-                <th>Deleta</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in items)
-            {
-                <tr>
-                    <td>@item.Nome</td>
-                    <td>@item.Progress</td>
-                    <td>@item.ConclusaoEm?.ToShortDateString() : @string.Empty</td>
-                    <td><Input type="button" class="btn btn-primary" @onclick="(() => PreparaEdicao(item))" data-toggle="modal" data-target="#itemModal" value="Edita" /></td>
-                    <td><input type="button" class="btn btn-danger" @onclick="(() => PreparaExclusao(item))" data-toggle="modal" data-target="#confirmaExclusaoModal" value="Deleta" /></td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="search-box">
+                                    <input type="search" autofocus @bind="descFilter" @bind:event="oninput" placeholder="Description..." />
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+
+                            </div>
+                            <div class="col-md-2">
+                                <input type="button" data-toggle="modal" data-target="#itemModal"
+                                       class="btn btn-primary" value="Nova Item" @onclick="(() => InitializeItemObject())" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <QuickGrid Items="FilteredItems" Pagination="pagination">
+                            <PropertyColumn Property="@(f => f.Nome)" Title="Desc" Sortable="true" >
+                                @* <ColumnOptions style="display: none">
+                                    <div class="search-box">
+                                        <input type="search" autofocus @bind="descFilter" @bind:event="oninput" placeholder="Country name..." />
+                                    </div>
+                                </ColumnOptions> *@
+                            </PropertyColumn>
+                            <PropertyColumn Property="@(f => f.Progress)" Title="Status" Sortable="true" />
+                            <PropertyColumn Property="@(f => f.Description)" Title="Description" Sortable="false" />
+                            <PropertyColumn Property="f => f.ConclusaoEm" Format="dddd, dd MMMM yyyy" Sortable="true" />
+
+                            <TemplateColumn Title="Actions">
+                                <Input type="button" class="btn btn-primary" @onclick="(() => PreparaEdicao(context))" data-toggle="modal" data-target="#itemModal" value="Edita" />
+                                <input type="button" class="btn btn-danger" @onclick="(() => PreparaExclusao(context))" data-toggle="modal" data-target="#confirmaExclusaoModal" value="Deleta" />
+                            </TemplateColumn>
+                        </QuickGrid>
+                    </div>
+                    <Paginator State="@pagination" />
+                </div>
+            </div>
+        </div>
+    </div>
 }
-<div>
-    <input type="button" data-toggle="modal" data-target="#itemModal" 
-    class="btn btn-primary" value="Nova Item" @onclick="(() => InitializeItemObject())" />
-</div>
 
 <ConfirmaDialog OnClick="@Delete" />
 <ItemDetalhes itemObject=itemObject AlteracaoDados="@AlteracaoDados">
@@ -48,12 +66,29 @@ else
 
 @code {
     List<ToDoVM> items;
+
     ToDoVM itemObject = new ToDoVM();
     string cabecalho = string.Empty;
+    string descFilter = string.Empty;
+    IQueryable<ToDoVM> FilteredItems
+    {
+        get
+        {
+            var result = items.AsQueryable();
+            if (!string.IsNullOrEmpty(descFilter))
+            {
+                result = result.Where(f => f.Nome.Contains(descFilter, StringComparison.CurrentCultureIgnoreCase));
+            }
+            return result;
+        }
+    }
+
+    PaginationState pagination = new PaginationState { ItemsPerPage = 10 };
 
     protected override async Task OnInitializedAsync()
     {
         items = await service.GetList();
+        //await js.InvokeAsync<object>("TestDataTablesAdd", "#table");
     }
     
     private void PreparaEdicao(ToDoVM item)
@@ -87,5 +122,6 @@ else
         items = await service.GetList();
         itemObject = new ToDoVM();
     }
+    
 }
 
