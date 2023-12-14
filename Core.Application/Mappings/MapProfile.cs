@@ -11,6 +11,8 @@ using ViewModels.AppRole;
 using ViewModels.Supplier;
 using Domain.Entities.Concrates;
 using Application.ViewModels.ToDo;
+using Core.Domain.Entities.Concrates.Catalog;
+using Service.Interface.ViewModels.Product;
 
 namespace Mapping
 {
@@ -20,51 +22,45 @@ namespace Mapping
         {
             #region Product Mapping
             CreateMap<Product, ProductVM>()
-                    .ForMember(dest => dest.CategoryVM, act => act.MapFrom(src => src.Category))
-                    .ForMember(dest => dest.ProductFeatureVM, act => act.MapFrom(src => src.ProductFeature))
-                    .ForMember(dest => dest.ProductSupplierVMs, act => act.MapFrom(src => src.ProductSuppliers))
+                    .ForMember(dest => dest.Category, act => act.MapFrom(src => src.Category))
+                    .ForMember(dest => dest.Variants, act => act.MapFrom(src => src.Variants))
+                    .ForMember(dest => dest.Images, act => act.MapFrom(src => src.Images))
                     .ReverseMap();
-            CreateMap<Product, ProductSaveVM>()
-                .ForMember(dest => dest.SupplierIDs, act => act.MapFrom(src => src.ProductSuppliers.Select(x => x.Supplier).Select(x => x.Id)))
-                .ForMember(dest => dest.ProductFeatureSaveVM, act => act.MapFrom(src => src.ProductFeature))
-                .ForMember(dest => dest.ProductSupplierVMs, act => act.MapFrom(src => src.ProductSuppliers))
-                .ReverseMap();
+            
             CreateMap<ProductVM, ProductSaveVM>().ReverseMap();
             #endregion
 
             #region Category Mapping
             CreateMap<Category, CategorySaveVM>()
                      .ReverseMap();
-            CreateMap<Category, CategoryVM>()
-                      .ForMember(dest => dest.ProductVMs, act => act.MapFrom(src => src.Products))
-                      .ForMember(dest => dest.Childreen, act => act.MapFrom(src => src.Children))
-                      .ReverseMap();
+            CreateMap<Category, CategoryVM>().ReverseMap();
+            CreateMap<IEnumerable<Category>, List<CategoryVM>>().ReverseMap();
             #endregion
 
             #region ProductFeature Mapping
-            CreateMap<ProductFeature, ProductFeatureVM>()
-                    .ReverseMap();
-            CreateMap<ProductFeature, ProductFeatureSaveVM>()
-                .ReverseMap();
+            //CreateMap<ProductFeature, ProductFeatureVM>()
+            //        .ReverseMap();
+            //CreateMap<ProductFeature, ProductFeatureSaveVM>()
+            //    .ReverseMap();
             #endregion
 
             #region Supplier Mapping
-            CreateMap<Supplier, SupplierVM>()
-                     .ForMember(dest => dest.ProductSupplierVMs, act => act.MapFrom(src => src.ProductSuppliers))
-                     .ReverseMap();
-            CreateMap<Supplier, SupplierSaveVM>()
-                    .ReverseMap(); ;
+            //CreateMap<Supplier, SupplierVM>()
+            //         .ForMember(dest => dest.ProductSupplierVMs, act => act.MapFrom(src => src.ProductSuppliers))
+            //         .ReverseMap();
+            //CreateMap<Supplier, SupplierSaveVM>()
+            //        .ReverseMap(); ;
             #endregion
 
             #region ProductSupplier Mapping
-            CreateMap<ProductSupplier, ProductSupplierVM>()
-                     .ForMember(dest => dest.ProductVM, act => act.MapFrom(src => src.Product))
-                     .ForMember(dest => dest.SupplierVM, act => act.MapFrom(src => src.Supplier))
-                     .ReverseMap();
-            CreateMap<ProductSupplier, ProductSupplierSaveVM>()
-                     .ForMember(dest => dest.ProductVM, act => act.MapFrom(src => src.Product))
-                     .ForMember(dest => dest.SupplierVM, act => act.MapFrom(src => src.Supplier))
-                     .ReverseMap();
+            //CreateMap<ProductSupplier, ProductSupplierVM>()
+            //         .ForMember(dest => dest.ProductVM, act => act.MapFrom(src => src.Product))
+            //         .ForMember(dest => dest.SupplierVM, act => act.MapFrom(src => src.Supplier))
+            //         .ReverseMap();
+            //CreateMap<ProductSupplier, ProductSupplierSaveVM>()
+            //         .ForMember(dest => dest.ProductVM, act => act.MapFrom(src => src.Product))
+            //         .ForMember(dest => dest.SupplierVM, act => act.MapFrom(src => src.Supplier))
+            //         .ReverseMap();
 
             #endregion
 
@@ -94,6 +90,10 @@ namespace Mapping
             CreateMap<ToDo, ToDoVM>()
                 .ReverseMap();
             #endregion
+
+            CreateMap<ProductType, ProductTypeSaveVM>().ReverseMap();
+            CreateMap<ProductType, ProductTypeVM>().ReverseMap();
+            CreateMap<IEnumerable<ProductType>, List<ProductTypeVM>>().ReverseMap();
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using Application.Repositories;
-using Domain.Entities.Concrates;
+using Core.Domain.Entities.Concrates.Catalog;
 using Domain.Enums;
 using Infraestrutura.Context;
 using Microsoft.EntityFrameworkCore;
@@ -14,12 +14,12 @@ namespace Infraestrutura.Repositories
 
         public async Task<Product> GetProduct(int id)
         {
-            Product? product = await GetActivesAsIQueryable()
-                .Include(x => x.Category)
-                .Include(x => x.ProductFeature)
-                .Include(x => x.ProductSuppliers)
-                    .ThenInclude(x => x.Supplier)
-                .FirstOrDefaultAsync(x=>x.Id==id);
+            Product? product = await GetActivesAsIQueryable().FirstOrDefaultAsync(x=>x.Id ==id);
+                //.Include(x => x.Category)
+                //.Include(x => x.ProductFeature)
+                //.Include(x => x.ProductSuppliers)
+                //    .ThenInclude(x => x.Supplier)
+                //.FirstOrDefaultAsync(x=>x.Id==id);
 
             return product;
         }
@@ -29,9 +29,9 @@ namespace Infraestrutura.Repositories
             List<Product> products = await GetActivesAsIQueryable()
                 .Include(x=>x.Category)
                 .Where(x => x.Category.Status != Status.Deleted)
-                .Include(x=>x.ProductFeature)
-                .Include(x=>x.ProductSuppliers)
-                    .ThenInclude(x => x.Supplier)
+                //.Include(x=>x.ProductFeature)
+                //.Include(x=>x.ProductSuppliers)
+                //    .ThenInclude(x => x.Supplier)
                 .ToListAsync();
 
             return products;
@@ -42,9 +42,9 @@ namespace Infraestrutura.Repositories
             List<Product> products = await GetActivesAsIQueryable()
                 .Include(x => x.Category)
                 .Where(x => x.Category.Status != Status.Deleted)
-                .Include(x => x.ProductFeature)
-                .Include(x => x.ProductSuppliers)
-                    .ThenInclude(x => x.Supplier)
+                //.Include(x => x.ProductFeature)
+                //.Include(x => x.ProductSuppliers)
+                //    .ThenInclude(x => x.Supplier)
                 .OrderByDescending(x=>x.InsertedDate)
                 .Take(count)
                 .ToListAsync();

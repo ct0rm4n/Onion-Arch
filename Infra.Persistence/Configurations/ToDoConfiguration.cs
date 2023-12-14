@@ -1,11 +1,12 @@
-﻿using Domain.Entities.Concrates;
+﻿using Core.Domain.Entities.Concrates.Catalog;
+using Domain.Entities.Concrates;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infraestrutura.Configurations
 {
-    public class ProductFeatureConfiguration : BaseConfiguration<ProductFeature>
+    public class ToDoConfiguration : BaseConfiguration<ToDo>
     {
-        public override void Configure(EntityTypeBuilder<ProductFeature> builder)
+        public override void Configure(EntityTypeBuilder<ToDo> builder)
         {
             base.Configure(builder);
             builder.HasKey(x => x.Id);

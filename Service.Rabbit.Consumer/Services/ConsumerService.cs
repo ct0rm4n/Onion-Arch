@@ -2,23 +2,29 @@
 using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using Rabbit.Models.Entities;
+using Service.Rabbit.Consumer.Interfaces;
+using Service.Rabbit.Consumer.Entities;
 
-public class Service
+public class ConsumerService : IConsumerService
 {
-    public void initService()
+    public ConsumerService()
+    {
+
+    }
+    public void ConsumerQueue(string queueName)
     {
         var factory = new ConnectionFactory()
         {
-            HostName = "localhost",
+            HostName = "127.0.0.1",
             UserName = "guest",
             Password = "guest",
-            Port = 15672
+            Port = Protocols.DefaultProtocol.DefaultPort,
+            VirtualHost = "/"
         };
         using (var connection = factory.CreateConnection())
         using (var channel = connection.CreateModel())
         {
-            channel.QueueDeclare(queue: "rabbitMensagesQueue",
+            channel.QueueDeclare(queue: queueName,//"rabbitMensagesQueue",
                                  durable: false,
                                  exclusive: false,
                                  autoDelete: false,
@@ -36,7 +42,7 @@ public class Service
 
                 Console.WriteLine($"Titulo: {mensagem.Titulo}; Texto={mensagem.Texto}; Id={mensagem.Id}");
             };
-            channel.BasicConsume(queue: "rabbitMensagesQueue",
+            channel.BasicConsume(queue: queueName,//"rabbitMensagesQueue",
                                  autoAck: true,
                                  consumer: consumer);
 
@@ -44,6 +50,5 @@ public class Service
             Console.ReadLine();
         }
     }
-}
 } 
     

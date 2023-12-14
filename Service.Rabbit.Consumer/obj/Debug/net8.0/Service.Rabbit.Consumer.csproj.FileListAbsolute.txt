@@ -4,3 +4,10 @@ C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\obj\Debug\net8.
 C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\obj\Debug\net8.0\Service.Rabbit.Consumer.AssemblyInfo.cs
 C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\obj\Debug\net8.0\Service.Rabbit.Consumer.csproj.CoreCompileInputs.cache
 C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\obj\Debug\net8.0\Service.Rabbit.Consumer.sourcelink.json
+C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\bin\Debug\net8.0\Service.Rabbit.Consumer.deps.json
+C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\bin\Debug\net8.0\Service.Rabbit.Consumer.dll
+C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\bin\Debug\net8.0\Service.Rabbit.Consumer.pdb
+C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\obj\Debug\net8.0\Service.Rabbit.Consumer.dll
+C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\obj\Debug\net8.0\refint\Service.Rabbit.Consumer.dll
+C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\obj\Debug\net8.0\Service.Rabbit.Consumer.pdb
+C:\Users\usuario\source\repos\BlazorApp3\Service.Rabbit.Consumer\obj\Debug\net8.0\ref\Service.Rabbit.Consumer.dll

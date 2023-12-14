@@ -10,14 +10,9 @@ using Services.Account;
 
 namespace Infra.IoC.DependencyResolvers
 {
-    public class StartupInject
+    public static class StartupInject
     {
-        public void Configure(IApplicationBuilder app)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void ConfigureServices(WebApplicationBuilder builder)
+        public static void InjectConfigureServices(this WebApplicationBuilder builder)
         {
             builder.Services.AddScoped<UserManager<AppUser>>();
             builder.Services.AddScoped<SignInManager<AppUser>>();
@@ -37,7 +32,7 @@ namespace Infra.IoC.DependencyResolvers
             builder.Services.AddIdentityCore<AppUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<AppDbContext>().AddSignInManager().AddDefaultTokenProviders();
         }
-        public void BuildMain(WebApplication app)
+        public static void BuildMain(this WebApplication app)
         {
             app.MapAdditionalIdentityEndpoints();
         }

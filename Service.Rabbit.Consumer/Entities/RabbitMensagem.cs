@@ -1,4 +1,4 @@
-﻿namespace Rabbit.Models.Entities
+﻿namespace Service.Rabbit.Consumer.Entities
 {
     public class RabbitMensagem
     {

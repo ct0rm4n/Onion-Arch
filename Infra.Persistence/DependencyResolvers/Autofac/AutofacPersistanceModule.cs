@@ -31,7 +31,6 @@ namespace DependencyResolvers.Autofac
             builder.Register(c =>
             {
                 IConfiguration config = c.Resolve<IConfiguration>();
-
                 DbContextOptionsBuilder<AppDbContext> opt = new DbContextOptionsBuilder<AppDbContext>();
                 opt.UseSqlServer(config.GetSection("ConnectionStrings:SqlConnection").Value);
                 return new AppDbContext(opt.Options);

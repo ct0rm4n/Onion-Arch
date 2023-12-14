@@ -1,4 +1,5 @@
-﻿using Domain.Entities.Concrates;
+﻿using Core.Domain.Entities.Concrates.Catalog;
+using Domain.Entities.Concrates;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
@@ -17,17 +18,15 @@ namespace Infraestrutura.Context
         public DbSet<AppUserRole> AppUserRoles { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
-        public DbSet<ProductFeature> ProductFeatures { get; set; }
-        public DbSet<Supplier> Suppliers { get; set; }
-        public DbSet<ProductSupplier> ProductsSuppliers { get; set; }
+        //public DbSet<ProductFeature> ProductFeatures { get; set; }
+        //public DbSet<Supplier> Suppliers { get; set; }
+        //public DbSet<ProductSupplier> ProductsSuppliers { get; set; }
         public DbSet<ToDo> ToDos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);//We've to call this first in order to avoid creating extra columns comes from Identity
+        {            
+            base.OnModelCreating(modelBuilder);//We've to call this first in order to avoid creating extra columns comes from Identity        
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-            //modelBuilder.Seed();            
-        }
-
+        }        
     }
 }

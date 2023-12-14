@@ -1,6 +1,6 @@
 ﻿
 using Application.Repositories;
-using Domain.Entities.Concrates;
+using Core.Domain.Entities.Concrates.Catalog;
 
 namespace Application.Repositories
 {

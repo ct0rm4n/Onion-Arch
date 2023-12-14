@@ -1,5 +1,5 @@
 ﻿using Application.Repositories;
-using Domain.Entities.Concrates;
+using Core.Domain.Entities.Concrates.Catalog;
 using Infraestrutura.Context;
 using Microsoft.EntityFrameworkCore;
 

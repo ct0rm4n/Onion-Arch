@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using Application.Repositories;
 using Wrappers;
-using Domain.Entities.Concrates;
 using ViewModels.Category;
+using Core.Domain.Entities.Concrates.Catalog;
+using Application.ViewModels.ToDo;
+using System.Collections.Generic;
 
 namespace Services
 {
@@ -14,11 +16,15 @@ namespace Services
             _categoryRepository = categoryRepository;
         }
 
-        public async Task<CategoryListVM> GetCategories()//redundant
+        public async Task<List<CategoryVM>> GetCategories()//redundant
         {
-            Result<List<CategoryVM>> categorVMs = await GetActives();
-            CategoryListVM categoryListVM = new() { Result = categorVMs };
-            return categoryListVM;
+            List<CategoryVM> categorVMs = new List<CategoryVM>();
+            var categories = _categoryRepository.GetAllAsIQueryable().ToList();;
+            foreach (var itemEntity in categories)
+            {
+                categorVMs.Add(_mapper.Map<CategoryVM>(itemEntity));
+            }
+            return categorVMs;
         }
 
         public async Task<CategoryVM> GetCategoriesWithChildren()

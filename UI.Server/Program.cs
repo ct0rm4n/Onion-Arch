@@ -17,9 +17,7 @@ builder.Services.AddWebLayerInjections();
 builder.Services.AddSession();
 builder.Services.AddIdentityService();
 builder.Services.AddApplicationLayerInjections();
-builder.Services.AddScoped<StartupInject>();
-var inject = new StartupInject();
-inject.ConfigureServices(builder);
+builder.InjectConfigureServices();
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 builder.Host.ConfigureServices(x => x.AddAutofac()).UseServiceProviderFactory(new AutofacServiceProviderFactory()).ConfigureContainer<ContainerBuilder>(builder =>
 {
@@ -48,5 +46,5 @@ app.MapRazorComponents<App>()
     .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(typeof(Counter).Assembly);
 
-inject.BuildMain(app);
+app.BuildMain();
 app.Run();

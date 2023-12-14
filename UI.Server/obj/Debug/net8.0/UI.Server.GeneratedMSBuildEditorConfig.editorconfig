@@ -170,8 +170,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb25maXJtYURpYWxvZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/BlazorApp3/UI.Server/Components/Pages/Admin/Catalog/CategoryList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxDYXRhbG9nXENhdGVnb3J5TGlzdC5yYXpvcg==
+[C:/Users/usuario/source/repos/BlazorApp3/UI.Server/Components/Pages/Admin/Catalog/Category/CategoryList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxDYXRhbG9nXENhdGVnb3J5XENhdGVnb3J5TGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/source/repos/BlazorApp3/UI.Server/Components/Pages/Admin/Catalog/Product/CreateOrUpdateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxDYXRhbG9nXFByb2R1Y3RcQ3JlYXRlT3JVcGRhdGVQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/source/repos/BlazorApp3/UI.Server/Components/Pages/Admin/Catalog/Product/ProductList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxDYXRhbG9nXFByb2R1Y3RcUHJvZHVjdExpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/usuario/source/repos/BlazorApp3/UI.Server/Components/Pages/Admin/Item/ItemDetalhes.razor]

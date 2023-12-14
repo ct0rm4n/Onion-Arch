@@ -1,4 +1,4 @@
-﻿using Domain.Entities.Concrates;
+﻿using Core.Domain.Entities.Concrates.Catalog;
 using ViewModels.Product;
 using Wrappers;
 
