@@ -3,7 +3,7 @@
 @inject Services.IAppRoleService servicesRoleUser
 @using ViewModels.AppRole
 @rendermode InteractiveServer
-
+@using Microsoft.AspNetCore.Components.QuickGrid
 <h3>Controle de Roles</h3>
 
 @if (roles == null)
@@ -12,27 +12,17 @@
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th></th>
-                <th>Name</th>                
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var tarefa in roles)
-            {
-                <tr>
-                    <td>@tarefa.Id</td>
-                    <td>@tarefa.Name</td>
-                    <td><input type="button" class="btn btn-primary" @onclick="(() => PreparaEdicao(tarefa))" data-toggle="modal" data-target="#roleModal" value="Edita" /></td>
-                    <td><input type="button" class="btn btn-danger" @onclick="(() => PreparaExclusao(tarefa))" data-toggle="modal" data-target="#confirmaExclusaoModal" value="Deleta" /></td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="card-body">
+        <QuickGrid Items="FilteredItems" Pagination="pagination">
+            <PropertyColumn Property="@(f => f.Name)" Title="Desc" Sortable="true" />
+            <PropertyColumn Property="@(f => f.Id)" Title="Desc" Sortable="true" />
+            <TemplateColumn Title="Actions">
+                <Input type="button" class="btn btn-primary" @onclick="(() => PreparaEdicao(context))" data-toggle="modal" data-target="#roleModal" value="Edita" />
+                <input type="button" class="btn btn-danger" @onclick="(() => PreparaExclusao(context))" data-toggle="modal" data-target="#confirmaExclusaoModal" value="Deleta" />
+            </TemplateColumn>
+        </QuickGrid>
+    </div>
+    <Paginator State="@pagination" />
 }
 <div>
     <input type="button" data-toggle="modal" data-target="#roleModal" 
@@ -50,29 +40,37 @@ else
     List<AppRoleVM> roles;
     AppRoleVM rolesObject = new AppRoleVM();
     string cabecalho = string.Empty;
+    PaginationState pagination = new PaginationState { ItemsPerPage = 10 };
 
+    IQueryable<AppRoleVM> FilteredItems
+    {
+        get
+        {
+            return roles.AsQueryable();
+        }
+    }
     protected override async Task OnInitializedAsync()
     {
         var list = servicesRoleUser.GetAll().Result;
         roles = (list.Data.AsQueryable<AppRoleVM>()).ToList();//new List<AppRoleVM>();
     }
     
-    private void PreparaEdicao(AppRoleVM tarefa)
+    private void PreparaEdicao(AppRoleVM role)
     {
-        cabecalho = "Edita Tarefa";
-        rolesObject = tarefa;
+        cabecalho = "Edita Role";
+        rolesObject = role;
     }
 
-    private void PreparaExclusao(AppRoleVM task)
+    private void PreparaExclusao(AppRoleVM role)
     {
-        rolesObject = task;
+        rolesObject = role;
     }
 
     private void InitializeTarefaObject()
     {
         rolesObject = new AppRoleVM();
         //rolesObject.ConclusaoEm = DateTime.Now;
-        cabecalho = "Nova Tarefa";
+        cabecalho = "Nova Role";
     }
     private async void AlteracaoDados()
     {
