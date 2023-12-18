@@ -1,6 +1,7 @@
 ﻿@implements IDisposable
 @inject NavigationManager NavigationManager
 @inject IJSRuntime js;
+
 <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">BlazorApp4</a>
@@ -9,93 +10,115 @@
 
 <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
 
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
+<div class="nav-scrollable @NavMenuCssClass">
+    <ul class="flex-column">
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                 <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
             </NavLink>
-        </div>
+        </li>
 
-        <div class="nav-item px-3">
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="counter">
                 <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
             </NavLink>
-        </div>
-        <div class="nav-item px-3">
+        </li>
+
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="users">
                 <span class="bi bi-database-fill-nav-menu" aria-hidden="true"></span> User
             </NavLink>
-        </div>
-        <div class="nav-item px-3">
+        </li>
+
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="roles">
                 <span class="bi bi-database-fill-nav-menu" aria-hidden="true"></span> Roles
             </NavLink>
-        </div>
-        <div class="nav-item px-3">
+        </li>
+
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="ItemList">
                 <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> ToDo
             </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="admin/product">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> ToDo
-            </NavLink>
-        </div>
+        </li>
 
-        <div class="nav-item px-3">
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" @onclick="()=> expandirSubMenu =! expandirSubMenu">
+                <span class="oi oi-graph" aria-hidden="true"></span> Produtos
+            </NavLink>
+            @if (expandirSubMenu)
+            {
+                <ul class="nav flex-column">
+                    <li class="nav-item px-3">
+                        <NavLink class="expand-menu" href="admin/product">
+                            <span class="oi oi-bar-chart" aria-hidden="true"></span> Barras
+                        </NavLink>
+                    </li>
+                    <li class="nav-item px-3">
+                        <NavLink class="expand-menu" href="admin/product">
+                            <span class="oi oi-pie-chart" aria-hidden="true"></span> Pizza
+                        </NavLink>
+                    </li>
+                </ul>
+            }
+        </li>
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="categories">
                 <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Categories
             </NavLink>
-        </div>
-        
-        <div class="nav-item px-3">
+        </li>
+
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="auth">
                 <span class="bi bi-lock-nav-menu" aria-hidden="true"></span> Auth Required
             </NavLink>
-        </div>
-
+        </li>
+ 
         <AuthorizeView>
             <Authorized>
-                <div class="nav-item px-3">
+                <li class="nav-item px-3">
                     <NavLink class="nav-link" href="Account/Manage">
                         <span class="bi bi-person-fill-nav-menu" aria-hidden="true"></span> @context.User.Identity?.Name
                     </NavLink>
-                </div>
-                <div class="nav-item px-3">
+                </li>
+                <li class="nav-item px-3">
                     <form action="Account/Logout" method="post">
                         <AntiforgeryToken />
-                        <input type="hidden" name="ReturnUrl" value="@currentUrl" />
+                         <input type="hidden" name="ReturnUrl" value="@currentUrl" />
                         <button type="submit" class="nav-link">
                             <span class="bi bi-arrow-bar-left-nav-menu" aria-hidden="true"></span> Logout
                         </button>
                     </form>
-                </div>
+                </li>
             </Authorized>
             <NotAuthorized>
-                <div class="nav-item px-3">
+                <li class="nav-item px-3">
                     <NavLink class="nav-link" href="Account/Register">
                         <span class="bi bi-person-nav-menu" aria-hidden="true"></span> Register
                     </NavLink>
-                </div>
-                <div class="nav-item px-3">
+                </li>
+                <li class="nav-item px-3">
                     <NavLink class="nav-link" href="Account/Login">
                         <span class="bi bi-person-badge-nav-menu" aria-hidden="true"></span> Login
                     </NavLink>
-                </div>
+                </li>
             </NotAuthorized>
-        </AuthorizeView>
-    </nav>
+        </AuthorizeView> 
+    </ul>
 </div>
 
 @code {
-    
-    [Parameter]
-    public bool expandSubNav { get; set; }
+
+    private bool collapseNavMenu = true;
+    private bool expandirSubMenu;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
     private void ToggleNavMenu()
     {
-        expandSubNav = !expandSubNav;
+        collapseNavMenu = !collapseNavMenu;
     }
+
     private string? currentUrl;
     protected override void OnInitialized()
     {

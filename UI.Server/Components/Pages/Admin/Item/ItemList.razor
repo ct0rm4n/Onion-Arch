@@ -77,7 +77,9 @@ else
             var result = items.AsQueryable();
             if (!string.IsNullOrEmpty(descFilter))
             {
-                result = result.Where(f => f.Nome.Contains(descFilter, StringComparison.CurrentCultureIgnoreCase));
+                result = result.Where(f => f.Nome.Contains(descFilter, StringComparison.CurrentCultureIgnoreCase) 
+                || f.Description.Contains(descFilter, StringComparison.CurrentCultureIgnoreCase)
+                || f.Progress.Contains(descFilter, StringComparison.CurrentCultureIgnoreCase));
             }
             return result;
         }

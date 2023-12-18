@@ -11,4 +11,8 @@
     <PackageReference Include="Hangfire" Version="1.7.35" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Scheduler\" />
+  </ItemGroup>
+
 </Project>

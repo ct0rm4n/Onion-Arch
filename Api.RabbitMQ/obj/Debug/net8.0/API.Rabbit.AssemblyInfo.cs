@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API.Rabbit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68ef46c6d2684b598071f1348caf6addf0c74637")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8968fc80fb2195e24d77aa758965cdf640a9cd8a")]
 [assembly: System.Reflection.AssemblyProductAttribute("API.Rabbit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API.Rabbit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

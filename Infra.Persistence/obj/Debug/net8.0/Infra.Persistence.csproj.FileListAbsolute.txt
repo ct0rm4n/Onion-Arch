@@ -22,6 +22,8 @@ C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\bin\Debug\net8.0\Infr
 C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\bin\Debug\net8.0\Infra.Persistence.dll
 C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\bin\Debug\net8.0\Infra.Persistence.pdb
 C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\bin\Debug\net8.0\Core.Domain.dll
+C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\bin\Debug\net8.0\Service.Interface.dll
+C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\bin\Debug\net8.0\Service.Interface.pdb
 C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\bin\Debug\net8.0\Core.Domain.pdb
 C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\obj\Debug\net8.0\Infra.Persistence.csproj.AssemblyReference.cache
 C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\obj\Debug\net8.0\Infra.Persistence.GeneratedMSBuildEditorConfig.editorconfig
@@ -35,5 +37,3 @@ C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\obj\Debug\net8.0\refi
 C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\obj\Debug\net8.0\Infra.Persistence.pdb
 C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\obj\Debug\net8.0\Infra.Persistence.genruntimeconfig.cache
 C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\obj\Debug\net8.0\ref\Infra.Persistence.dll
-C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\bin\Debug\net8.0\Service.Interface.dll
-C:\Users\usuario\source\repos\BlazorApp3\Infra.Persistence\bin\Debug\net8.0\Service.Interface.pdb

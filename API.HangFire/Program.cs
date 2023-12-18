@@ -18,5 +18,12 @@ app.UseHangfireDashboard();
 
 app.UseAuthorization();
 app.MapControllers();
+//TODO: Modulate Service
+BackgroundJob.Schedule(
+    () => Console.WriteLine("Send MAIlS"),
+    TimeSpan.FromDays(7));
+
+RecurringJob.AddOrUpdate("Integrate Marketplace",
+    () => Console.Write("Recurring"), Cron.Daily);
 
 app.Run();

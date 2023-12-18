@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\Auth3.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Pages\Counter.razor~RFece4c68.TMP" />
   </ItemGroup>
 

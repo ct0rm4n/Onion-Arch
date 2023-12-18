@@ -4,7 +4,7 @@ using System.Security.Claims;
 
 namespace Services.Account
 {
-    internal class PersistentAuthenticationStateProvider : AuthenticationStateProvider
+    public class PersistentAuthenticationStateProvider : AuthenticationStateProvider
     {
         private static readonly Task<AuthenticationState> defaultUnauthenticatedTask =
             Task.FromResult(new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity())));

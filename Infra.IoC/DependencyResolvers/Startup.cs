@@ -21,8 +21,9 @@ namespace Infra.IoC.DependencyResolvers
             builder.Services.AddScoped<IdentityUserAccessor>();
             builder.Services.AddScoped<IdentityRedirectManager>();
             builder.Services.AddScoped<AuthenticationStateProvider, PersistingRevalidatingAuthenticationStateProvider>();
+            builder.Services.AddSingleton<AuthenticationStateProvider, PersistentAuthenticationStateProvider>();
             builder.Services.AddScoped<IEmailSender<AppUser>, IdentityNoOpEmailSender>();
-
+            
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultScheme = IdentityConstants.ApplicationScheme;
