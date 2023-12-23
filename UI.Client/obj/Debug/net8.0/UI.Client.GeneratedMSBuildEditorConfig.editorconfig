@@ -13,23 +13,23 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = UI.Client
 build_property.RootNamespace = UI.Client
-build_property.ProjectDir = C:\Users\usuario\source\repos\BlazorApp3\UI.Client\
+build_property.ProjectDir = D:\Projects\Onion-Arch\UI.Client\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\usuario\source\repos\BlazorApp3\UI.Client
+build_property.MSBuildProjectDirectory = D:\Projects\Onion-Arch\UI.Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/usuario/source/repos/BlazorApp3/UI.Client/Pages/Counter.razor]
+[D:/Projects/Onion-Arch/UI.Client/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/BlazorApp3/UI.Client/RedirectToLogin.razor]
+[D:/Projects/Onion-Arch/UI.Client/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = UmVkaXJlY3RUb0xvZ2luLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/BlazorApp3/UI.Client/_Imports.razor]
+[D:/Projects/Onion-Arch/UI.Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

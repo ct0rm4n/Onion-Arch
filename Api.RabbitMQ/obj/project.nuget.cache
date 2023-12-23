@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+qm7YuHTH6nrtldHPKCOZ8Kb5cThW+Dc2Q9RLICBMwaCEnq6BmT6BXrPAlmDtbBWGo7+y0olgPHNQJp16LjMoA==",
+  "dgSpecHash": "kk8zq5HWpOS0oSdPjj9bxFVFRZm7nDNl7Qc7wlQqywY0rk+oOdGZgqzZ2pV9BdMuE/LB8T+DUN4jP4KATBb7Dg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Api.RabbitMQ\\API.Rabbit.csproj",
+  "projectFilePath": "D:\\Projects\\Onion-Arch\\Api.RabbitMQ\\API.Rabbit.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

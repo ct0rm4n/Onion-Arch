@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "70FVO6b0HXgdl7hTYCARXzpjnUTrqdPMKfXORhGPnJ2sE4Nbdvbd6XtyKcdSqdcyDAYD6x5mwHCkypBVwU+mmA==",
+  "dgSpecHash": "VYWJV9rP4isLxW/6ZYSNOyDxvpNgd9sAwiBrUylcThjUhJpRPraM5hNTRybbZkNiYxDHa5Hmj7EKBXX8eFZGSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\UI.Server\\UI.Server.csproj",
+  "projectFilePath": "D:\\Projects\\Onion-Arch\\UI.Server\\UI.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usuario\\.nuget\\packages\\autofac\\6.5.0\\autofac.6.5.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",

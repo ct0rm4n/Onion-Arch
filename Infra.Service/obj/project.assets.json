@@ -4768,11 +4768,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Infra.Service\\Service.Application.csproj",
+      "projectUniqueName": "D:\\Projects\\Onion-Arch\\Infra.Service\\Service.Application.csproj",
       "projectName": "Service.Application",
-      "projectPath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Infra.Service\\Service.Application.csproj",
+      "projectPath": "D:\\Projects\\Onion-Arch\\Infra.Service\\Service.Application.csproj",
       "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Infra.Service\\obj\\",
+      "outputPath": "D:\\Projects\\Onion-Arch\\Infra.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4794,14 +4794,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Core.Application\\Service.Interface.csproj": {
-              "projectPath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Core.Application\\Service.Interface.csproj"
+            "D:\\Projects\\Onion-Arch\\Core.Application\\Service.Interface.csproj": {
+              "projectPath": "D:\\Projects\\Onion-Arch\\Core.Application\\Service.Interface.csproj"
             },
-            "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Core.Domain\\Core.Domain.csproj": {
-              "projectPath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Core.Domain\\Core.Domain.csproj"
+            "D:\\Projects\\Onion-Arch\\Core.Domain\\Core.Domain.csproj": {
+              "projectPath": "D:\\Projects\\Onion-Arch\\Core.Domain\\Core.Domain.csproj"
             },
-            "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Infra.Persistence\\Infra.Persistence.csproj": {
-              "projectPath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Infra.Persistence\\Infra.Persistence.csproj"
+            "D:\\Projects\\Onion-Arch\\Infra.Persistence\\Infra.Persistence.csproj": {
+              "projectPath": "D:\\Projects\\Onion-Arch\\Infra.Persistence\\Infra.Persistence.csproj"
             }
           }
         }

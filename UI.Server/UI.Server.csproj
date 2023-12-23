@@ -249,7 +249,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Infraestrutura\Infra.Persistence.csproj" />
     <ProjectReference Include="..\Infra.IoC\Infra.IoC.csproj" />
     <ProjectReference Include="..\Infra.Persistence\Infra.Persistence.csproj" />
     <ProjectReference Include="..\Infra.Service\Service.Application.csproj" />

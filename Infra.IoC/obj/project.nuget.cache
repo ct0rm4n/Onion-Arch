@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f5HGUSE8BjmSHD04scDZ9GaTAcMKXY3lYynsPlzekd/qzQcJsQYeJSeX7FwLD9yfab7TC7zOAZEvVUWbKdKntw==",
+  "dgSpecHash": "gnlbNsv+kgu3YEJRQKw5AfasyBS778CTO9/6/GE+gRHKIUgeDZRLI37VrK9Ve1MK+TlVA1jtMV7dUZtG7Qg+aQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Infra.IoC\\Infra.IoC.csproj",
+  "projectFilePath": "D:\\Projects\\Onion-Arch\\Infra.IoC\\Infra.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usuario\\.nuget\\packages\\autofac\\6.5.0\\autofac.6.5.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Service.Rabbit.Consumer\\Service.Rabbit.Consumer.csproj": {}
+    "D:\\Projects\\Onion-Arch\\Service.Rabbit.Consumer\\Service.Rabbit.Consumer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Service.Rabbit.Consumer\\Service.Rabbit.Consumer.csproj": {
+    "D:\\Projects\\Onion-Arch\\Service.Rabbit.Consumer\\Service.Rabbit.Consumer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Service.Rabbit.Consumer\\Service.Rabbit.Consumer.csproj",
+        "projectUniqueName": "D:\\Projects\\Onion-Arch\\Service.Rabbit.Consumer\\Service.Rabbit.Consumer.csproj",
         "projectName": "Service.Rabbit.Consumer",
-        "projectPath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Service.Rabbit.Consumer\\Service.Rabbit.Consumer.csproj",
+        "projectPath": "D:\\Projects\\Onion-Arch\\Service.Rabbit.Consumer\\Service.Rabbit.Consumer.csproj",
         "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Service.Rabbit.Consumer\\obj\\",
+        "outputPath": "D:\\Projects\\Onion-Arch\\Service.Rabbit.Consumer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

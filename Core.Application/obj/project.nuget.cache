@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uXXAVtxM7dinFBxptKl8sib9Lsg9JCEChTdcxYyo354oFMUBbt9DhQE+jpu6N/CLcr/7HP31iRR9jAymfpZBBA==",
+  "dgSpecHash": "hWTCeyHN1ZWvSR5kb/jJVuPAQ0JMaYZugQyzk432gmk0bdz0jIjWZ+dmf85m42qDy10OHBNkLGQ+601gkqab+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Core.Application\\Service.Interface.csproj",
+  "projectFilePath": "D:\\Projects\\Onion-Arch\\Core.Application\\Service.Interface.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usuario\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

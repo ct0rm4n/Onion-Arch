@@ -23,3 +23,16 @@ C:\Users\usuario\source\repos\BlazorApp3\Core.Domain\obj\Debug\net8.0\Core.Domai
 C:\Users\usuario\source\repos\BlazorApp3\Core.Domain\obj\Debug\net8.0\refint\Core.Domain.dll
 C:\Users\usuario\source\repos\BlazorApp3\Core.Domain\obj\Debug\net8.0\Core.Domain.pdb
 C:\Users\usuario\source\repos\BlazorApp3\Core.Domain\obj\Debug\net8.0\ref\Core.Domain.dll
+D:\Projects\Onion-Arch\Core.Domain\bin\Debug\net8.0\Core.Domain.deps.json
+D:\Projects\Onion-Arch\Core.Domain\bin\Debug\net8.0\Core.Domain.dll
+D:\Projects\Onion-Arch\Core.Domain\bin\Debug\net8.0\Core.Domain.pdb
+D:\Projects\Onion-Arch\Core.Domain\obj\Debug\net8.0\Core.Domain.csproj.AssemblyReference.cache
+D:\Projects\Onion-Arch\Core.Domain\obj\Debug\net8.0\Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Onion-Arch\Core.Domain\obj\Debug\net8.0\Core.Domain.AssemblyInfoInputs.cache
+D:\Projects\Onion-Arch\Core.Domain\obj\Debug\net8.0\Core.Domain.AssemblyInfo.cs
+D:\Projects\Onion-Arch\Core.Domain\obj\Debug\net8.0\Core.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\Onion-Arch\Core.Domain\obj\Debug\net8.0\Core.Domain.sourcelink.json
+D:\Projects\Onion-Arch\Core.Domain\obj\Debug\net8.0\Core.Domain.dll
+D:\Projects\Onion-Arch\Core.Domain\obj\Debug\net8.0\refint\Core.Domain.dll
+D:\Projects\Onion-Arch\Core.Domain\obj\Debug\net8.0\Core.Domain.pdb
+D:\Projects\Onion-Arch\Core.Domain\obj\Debug\net8.0\ref\Core.Domain.dll

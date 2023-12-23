@@ -546,11 +546,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Api.RabbitMQ\\API.Rabbit.csproj",
+      "projectUniqueName": "D:\\Projects\\Onion-Arch\\Api.RabbitMQ\\API.Rabbit.csproj",
       "projectName": "API.Rabbit",
-      "projectPath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Api.RabbitMQ\\API.Rabbit.csproj",
+      "projectPath": "D:\\Projects\\Onion-Arch\\Api.RabbitMQ\\API.Rabbit.csproj",
       "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\Api.RabbitMQ\\obj\\",
+      "outputPath": "D:\\Projects\\Onion-Arch\\Api.RabbitMQ\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

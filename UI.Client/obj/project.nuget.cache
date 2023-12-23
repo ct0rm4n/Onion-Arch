@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WkcL/zAoA3fj86xWz55pcTDE4chvgp6pmGtnvRUFcNha2PmCaT6Cg6Oy9bl+/30qX9qAjwQs4Hwn8NvYOa3glA==",
+  "dgSpecHash": "r1zA+LE+vEmnFrVbwid02IpcQXqF44nJK+eAdp+KWMjdEObQ35N6e15bFMw2NzYcNtXFuKNIdoGwZvUdUv5IRg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\UI.Client\\UI.Client.csproj",
+  "projectFilePath": "D:\\Projects\\Onion-Arch\\UI.Client\\UI.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\blazor.bootstrap.1.10.4.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.0\\microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",

@@ -2058,11 +2058,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\UI.Client\\UI.Client.csproj",
+      "projectUniqueName": "D:\\Projects\\Onion-Arch\\UI.Client\\UI.Client.csproj",
       "projectName": "UI.Client",
-      "projectPath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\UI.Client\\UI.Client.csproj",
+      "projectPath": "D:\\Projects\\Onion-Arch\\UI.Client\\UI.Client.csproj",
       "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usuario\\source\\repos\\BlazorApp3\\UI.Client\\obj\\",
+      "outputPath": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
