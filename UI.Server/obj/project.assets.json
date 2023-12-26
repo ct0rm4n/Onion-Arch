@@ -7047,6 +7047,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Blazor.Bootstrap >= 1.10.4",
       "Blazored.TextEditor >= 1.1.0",
       "Infra.IoC >= 1.0.0",
       "Infra.Persistence >= 1.0.0",
@@ -7054,7 +7055,6 @@
       "Microsoft.AspNetCore.Components.WebAssembly.Server >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.0",
       "MudBlazor >= 6.2.2",
-      "Service.Application >= 1.0.0",
       "UI.Client >= 1.0.0"
     ]
   },
@@ -7097,9 +7097,6 @@
             "D:\\Projects\\Onion-Arch\\Infra.Persistence\\Infra.Persistence.csproj": {
               "projectPath": "D:\\Projects\\Onion-Arch\\Infra.Persistence\\Infra.Persistence.csproj"
             },
-            "D:\\Projects\\Onion-Arch\\Infra.Service\\Service.Application.csproj": {
-              "projectPath": "D:\\Projects\\Onion-Arch\\Infra.Service\\Service.Application.csproj"
-            },
             "D:\\Projects\\Onion-Arch\\UI.Client\\UI.Client.csproj": {
               "projectPath": "D:\\Projects\\Onion-Arch\\UI.Client\\UI.Client.csproj"
             }
@@ -7116,6 +7113,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Blazor.Bootstrap": {
+            "target": "Package",
+            "version": "[1.10.4, )"
+          },
           "Blazored.TextEditor": {
             "target": "Package",
             "version": "[1.1.0, )"

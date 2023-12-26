@@ -2086,7 +2086,9 @@ C:\Users\usuario\source\repos\BlazorApp3\UI.Client\obj\Debug\net8.0\UI.Client.dl
 C:\Users\usuario\source\repos\BlazorApp3\UI.Client\obj\Debug\net8.0\refint\UI.Client.dll
 C:\Users\usuario\source\repos\BlazorApp3\UI.Client\obj\Debug\net8.0\UI.Client.pdb
 C:\Users\usuario\source\repos\BlazorApp3\UI.Client\obj\Debug\net8.0\ref\UI.Client.dll
+D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\blazor.boot.json
 D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\blazor.webassembly.js
+D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\BlazorBootstrap.wasm
 D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\dotnet.js
 D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\dotnet.js.map
 D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\dotnet.native.8.0.0.cx60pm2snx.js
@@ -2096,8 +2098,6 @@ D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\dotnet.runt
 D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\icudt_CJK.dat
 D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\icudt_EFIGS.dat
 D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\icudt_no_CJK.dat
-D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\blazor.boot.json
-D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\BlazorBootstrap.wasm
 D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.wasm
 D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.wasm
 D:\Projects\Onion-Arch\UI.Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Forms.wasm

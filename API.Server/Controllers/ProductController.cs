@@ -43,12 +43,14 @@ namespace API.Server.Controllers
         {
             try
             {
+                if (id <= 0) return BadRequest(new { Id = "Id", menssage = "Invalid Id." });
+                
                 return await _productRepository.FindAsync(id);
             }
             catch(ValidationException e)
             {
                 _logger.LogError(e, e.Message + "/n Validation Exception Details.");
-                return BadRequest(e.Message);
+                return Problem(e.Message);
             }        
         }
         [HttpPost(Name = "Create")]

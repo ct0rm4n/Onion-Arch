@@ -251,8 +251,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Infra.IoC\Infra.IoC.csproj" />
     <ProjectReference Include="..\Infra.Persistence\Infra.Persistence.csproj" />
-    <ProjectReference Include="..\Infra.Service\Service.Application.csproj" />
     <ProjectReference Include="..\UI.Client\UI.Client.csproj" />
+    <PackageReference Include="Blazor.Bootstrap" Version="1.10.4" />
     <PackageReference Include="Blazored.TextEditor" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0" />

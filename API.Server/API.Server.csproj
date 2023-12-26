@@ -4,15 +4,19 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <InvariantGlobalization>true</InvariantGlobalization>
+    <InvariantGlobalization>false</InvariantGlobalization>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="7.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Core.Application\Service.Interface.csproj" />
+    <ProjectReference Include="..\Infra.IoC\Infra.IoC.csproj" />
+    <ProjectReference Include="..\Infra.Persistence\Infra.Persistence.csproj" />
+    <ProjectReference Include="..\Infra.Service\Service.Application.csproj" />
   </ItemGroup>
 
 </Project>

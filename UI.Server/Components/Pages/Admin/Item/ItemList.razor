@@ -28,8 +28,10 @@ else
 
                             </div>
                             <div class="col-md-2">
-                                <input type="button" data-toggle="modal" data-target="#itemModal"
-                                       class="btn btn-primary" value="Nova Item" @onclick="(() => InitializeItemObject())" />
+                                <a type="button" data-toggle="modal" data-target="#itemModal"
+                                       class="btn btn-primary" @onclick="(() => InitializeItemObject())">
+                                       <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true" b-4knz10sgzz=""></span> Novo
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -86,7 +88,7 @@ else
         }
     }
 
-    PaginationState pagination = new PaginationState { ItemsPerPage = 10 };
+    PaginationState pagination = new PaginationState { ItemsPerPage = 5 };
 
     protected override async Task OnInitializedAsync()
     {

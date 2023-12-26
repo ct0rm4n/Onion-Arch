@@ -3,7 +3,7 @@ using Autofac;
 using UI.Server.Components;
 using DependencyResolvers.Autofac;
 using DependencyResolvers;
-using UI.Client.Pages;
+//using UI.Client.Pages;
 using Infra.IoC.DependencyResolvers;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -43,8 +43,8 @@ app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
-    .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(Counter).Assembly);
+    .AddInteractiveWebAssemblyRenderMode();
+//    .AddAdditionalAssemblies(typeof(Counter).Assembly);
 
 app.BuildMain();
 app.Run();

@@ -1,6 +1,9 @@
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+.sidebar{
+    background-image: linear-gradient(180deg, rgb(0, 28, 83) 0%, #555 70%) !important;
+}
 
 a, .btn-link {
     color: #006bb7;

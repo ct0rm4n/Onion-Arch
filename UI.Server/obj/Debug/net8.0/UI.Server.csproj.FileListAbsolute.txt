@@ -300,7 +300,6 @@ D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.Fil
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.NET.WebAssembly.Webcil.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.SymbolStore.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\BlazorDebugProxy\Newtonsoft.Json.dll
-D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\UI.Client.staticwebassets.runtime.json
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\libman.json
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\UI.Server.staticwebassets.runtime.json
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\UI.Server.exe
@@ -314,15 +313,12 @@ D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\AutoMapper.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Azure.Core.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Azure.Identity.dll
-D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\BlazorBootstrap.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Blazored.TextEditor.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\FluentValidation.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Humanizer.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
-D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll
-D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -345,7 +341,6 @@ D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Loggin
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Mono.TextTemplating.dll
@@ -433,11 +428,9 @@ D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Infra.IoC.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Infra.Persistence.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Service.Application.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Service.Interface.dll
-D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\UI.Client.dll
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Infra.IoC.pdb
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Infra.Persistence.pdb
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Service.Application.pdb
-D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\UI.Client.pdb
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Core.Domain.pdb
 D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Service.Interface.pdb
 D:\Projects\Onion-Arch\UI.Server\obj\Debug\net8.0\UI.Server.csproj.AssemblyReference.cache
@@ -462,3 +455,10 @@ D:\Projects\Onion-Arch\UI.Server\obj\Debug\net8.0\scopedcss\projectbundle\UI.Ser
 D:\Projects\Onion-Arch\UI.Server\obj\Debug\net8.0\UI.Server.csproj.CopyComplete
 D:\Projects\Onion-Arch\UI.Server\obj\Debug\net8.0\UI.Server.genruntimeconfig.cache
 D:\Projects\Onion-Arch\UI.Server\obj\Debug\net8.0\ref\UI.Server.dll
+D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\BlazorBootstrap.dll
+D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\UI.Client.staticwebassets.runtime.json
+D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll
+D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
+D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\UI.Client.dll
+D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\UI.Client.pdb

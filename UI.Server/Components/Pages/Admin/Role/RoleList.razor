@@ -12,26 +12,45 @@
 }
 else
 {
-    <div class="card-body">
-        <QuickGrid Items="FilteredItems" Pagination="pagination">
-            <PropertyColumn Property="@(f => f.Name)" Title="Desc" Sortable="true" />
-            <PropertyColumn Property="@(f => f.Id)" Title="Desc" Sortable="true" />
-            <TemplateColumn Title="Actions">
-                <Input type="button" class="btn btn-primary" @onclick="(() => PreparaEdicao(context))" data-toggle="modal" data-target="#roleModal" value="Edita" />
-                <input type="button" class="btn btn-danger" @onclick="(() => PreparaExclusao(context))" data-toggle="modal" data-target="#confirmaExclusaoModal" value="Deleta" />
-            </TemplateColumn>
-        </QuickGrid>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="search-box">
+                                    <input type="search" autofocus @bind="descFilter" @bind:event="oninput" placeholder="Search..." />
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                            </div>
+                            <div class="col-md-2">
+                                <a type="button" data-toggle="modal" data-target="#roleModal"
+                                       class="btn btn-primary" @onclick="(() => InitializeTarefaObject())" >
+                                    <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true" b-4knz10sgzz=""></span> Novo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <QuickGrid Items="FilteredItems" Pagination="pagination">
+                            <PropertyColumn Property="@(f => f.Name)" Title="Desc" Sortable="true" />
+                            <PropertyColumn Property="@(f => f.Id)" Title="Desc" Sortable="true" />
+                            <TemplateColumn Title="Actions">
+                                <Input type="button" class="btn btn-primary" @onclick="(() => PreparaEdicao(context))" data-toggle="modal" data-target="#roleModal" value="Edita" />
+                                <input type="button" class="btn btn-danger" @onclick="(() => PreparaExclusao(context))" data-toggle="modal" data-target="#confirmaExclusaoModal" value="Deleta" />
+                            </TemplateColumn>
+                        </QuickGrid>
+                    </div>
+                    <Paginator State="@pagination" />
+                </div>
+            </div>
+        </div>
     </div>
-    <Paginator State="@pagination" />
 }
-<div>
-    <input type="button" data-toggle="modal" data-target="#roleModal" 
-    class="btn btn-primary" value="Nova role" @onclick="(() => InitializeTarefaObject())" />
-</div>
-
 
 <ConfirmaDialog OnClick="@Delete" />
-
 <RoleModal RoleObj=rolesObject AlteracaoDados="@AlteracaoDados">
     <Cabecalho>@cabecalho</Cabecalho>
 </RoleModal>
@@ -40,21 +59,27 @@ else
     List<AppRoleVM> roles;
     AppRoleVM rolesObject = new AppRoleVM();
     string cabecalho = string.Empty;
+    string descFilter = string.Empty;
     PaginationState pagination = new PaginationState { ItemsPerPage = 10 };
-
+    public HttpClient httpClient = new HttpClient();
     IQueryable<AppRoleVM> FilteredItems
     {
         get
         {
-            return roles.AsQueryable();
+            var result = roles.AsQueryable();
+            if (!string.IsNullOrEmpty(descFilter))
+            {
+                result = result.Where(f =>
+                    f.Name.Contains(descFilter, StringComparison.CurrentCultureIgnoreCase));
+            }
+            return result;
         }
     }
     protected override async Task OnInitializedAsync()
     {
-        var list = servicesRoleUser.GetAll().Result;
-        roles = (list.Data.AsQueryable<AppRoleVM>()).ToList();//new List<AppRoleVM>();
+        await GetRoleList();
     }
-    
+
     private void PreparaEdicao(AppRoleVM role)
     {
         cabecalho = "Edita Role";
@@ -74,16 +99,21 @@ else
     }
     private async void AlteracaoDados()
     {
-        roles = (servicesRoleUser.GetAll().Result.Data.AsQueryable<AppRoleVM>()).ToList();
+        await GetRoleList();
         StateHasChanged();
     }
 
     private async Task Delete()
     {
         await servicesRoleUser.DeleteAsync(rolesObject.Id);
-        await js.InvokeAsync<object>("CloseModal", "confirmaExclusaoModal");        
-        roles = (servicesRoleUser.GetAll().Result.Data.AsQueryable<AppRoleVM>()).ToList();
+        await js.InvokeAsync<object>("CloseModal", "confirmaExclusaoModal");
+        await GetRoleList();
         rolesObject = new AppRoleVM();
         //StateHasChanged();
+    }
+
+    private async Task GetRoleList()
+    {
+        roles = await httpClient.GetFromJsonAsync<List<AppRoleVM>>("https://localhost:7279/api/role");
     }
 }

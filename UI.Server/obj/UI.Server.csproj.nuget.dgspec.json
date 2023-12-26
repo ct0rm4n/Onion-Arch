@@ -538,9 +538,6 @@
               "D:\\Projects\\Onion-Arch\\Infra.Persistence\\Infra.Persistence.csproj": {
                 "projectPath": "D:\\Projects\\Onion-Arch\\Infra.Persistence\\Infra.Persistence.csproj"
               },
-              "D:\\Projects\\Onion-Arch\\Infra.Service\\Service.Application.csproj": {
-                "projectPath": "D:\\Projects\\Onion-Arch\\Infra.Service\\Service.Application.csproj"
-              },
               "D:\\Projects\\Onion-Arch\\UI.Client\\UI.Client.csproj": {
                 "projectPath": "D:\\Projects\\Onion-Arch\\UI.Client\\UI.Client.csproj"
               }
@@ -557,6 +554,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Blazor.Bootstrap": {
+              "target": "Package",
+              "version": "[1.10.4, )"
+            },
             "Blazored.TextEditor": {
               "target": "Package",
               "version": "[1.1.0, )"
