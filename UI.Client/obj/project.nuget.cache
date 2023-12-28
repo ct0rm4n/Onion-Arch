@@ -1,15 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "r1zA+LE+vEmnFrVbwid02IpcQXqF44nJK+eAdp+KWMjdEObQ35N6e15bFMw2NzYcNtXFuKNIdoGwZvUdUv5IRg==",
+  "dgSpecHash": "tl1LEHVjqngUeS1Fn4X6BBiNm3rWSGMYF3+sCHl8TT+GAn/nUo0TpZfj4yDL9aYLlCcbjngFDlkNWD633npjEA==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Onion-Arch\\UI.Client\\UI.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\blazor.bootstrap.1.10.4.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\blazored.texteditor\\1.1.0\\blazored.texteditor.1.1.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.0\\microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.0\\microsoft.aspnetcore.components.8.0.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\8.0.0\\microsoft.aspnetcore.components.analyzers.8.0.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\8.0.0\\microsoft.aspnetcore.components.authorization.8.0.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\8.0.0\\microsoft.aspnetcore.components.forms.8.0.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\microsoft.aspnetcore.components.quickgrid.8.0.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.web\\8.0.0\\microsoft.aspnetcore.components.web.8.0.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\8.0.0\\microsoft.aspnetcore.components.webassembly.8.0.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.0\\microsoft.aspnetcore.components.webassembly.authentication.8.0.0.nupkg.sha512",
@@ -32,6 +34,7 @@
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.0\\microsoft.jsinterop.webassembly.8.0.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.0\\microsoft.net.illink.tasks.8.0.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.0\\microsoft.net.sdk.webassembly.pack.8.0.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\mudblazor\\6.2.2\\mudblazor.6.2.2.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"

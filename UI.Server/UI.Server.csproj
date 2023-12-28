@@ -8,14 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Components\Pages\Client\**" />
-    <Content Remove="Components\Pages\Client\**" />
-    <EmbeddedResource Remove="Components\Pages\Client\**" />
-    <None Remove="Components\Pages\Client\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Remove="Components\Pages\Admin\Catalog\Category.razor" />
+    <Content Remove="Components\Admin\Pages\_Imports.razor" />
   </ItemGroup>
 
   <ItemGroup> 
@@ -55,9 +48,9 @@
     <None Include="Components\Account\Shared\ManageNavMenu.razor" />
     <None Include="Components\Account\Shared\ShowRecoveryCodes.razor" />
     <None Include="Components\Account\Shared\StatusMessage.razor" />
+    <None Include="Components\Admin\Pages\Identity\Item\ItemDetalhes.razor" />
+    <None Include="Components\Admin\Pages\_Imports.razor" />
     <None Include="Components\App.razor" />
-    <None Include="Components\Pages\Admin\Item\ItemDetalhes.razor" />
-    <None Include="Components\Pages\Admin\Item\ItemList.razor" />
     <None Include="Components\_Imports.razor" />
     <None Include="wwwroot\bootstrap\bootstrap.min.css.map" />
     <None Include="wwwroot\bootstrap\dist\css\bootstrap-grid.css.map" />
@@ -256,10 +249,7 @@
     <PackageReference Include="Blazored.TextEditor" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0" />	
     <PackageReference Include="MudBlazor" Version="6.2.2" />
   </ItemGroup>
     

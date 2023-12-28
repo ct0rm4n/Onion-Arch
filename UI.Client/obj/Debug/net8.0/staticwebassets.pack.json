@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
+      "Id": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\UI.Client.bundle.scp.css",
+      "PackagePath": "staticwebassets\\UI.Client.bundle.scp.css"
+    },
+    {
       "Id": "D:\\Projects\\Onion-Arch\\UI.Client\\wwwroot\\appsettings.Development.json",
       "PackagePath": "staticwebassets\\appsettings.Development.json"
     },

@@ -1409,8 +1409,11 @@
       "UI.Client/1.0.0": {
         "dependencies": {
           "Blazor.Bootstrap": "1.10.4",
+          "Blazored.TextEditor": "1.1.0",
+          "Microsoft.AspNetCore.Components.QuickGrid": "8.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "8.0.0",
-          "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "8.0.0"
+          "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "8.0.0",
+          "MudBlazor": "6.2.2"
         },
         "runtime": {
           "UI.Client.dll": {}

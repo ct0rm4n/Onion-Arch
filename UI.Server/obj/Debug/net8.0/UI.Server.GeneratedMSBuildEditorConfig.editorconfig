@@ -162,6 +162,42 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFNoYXJlZFxTdGF0dXNNZXNzYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Projects/Onion-Arch/UI.Server/Components/Admin/Pages/Catalog/Category/CategoryList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZG1pblxQYWdlc1xDYXRhbG9nXENhdGVnb3J5XENhdGVnb3J5TGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Onion-Arch/UI.Server/Components/Admin/Pages/Catalog/Product/CreateOrUpdateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZG1pblxQYWdlc1xDYXRhbG9nXFByb2R1Y3RcQ3JlYXRlT3JVcGRhdGVQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Onion-Arch/UI.Server/Components/Admin/Pages/Catalog/Product/ProductList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZG1pblxQYWdlc1xDYXRhbG9nXFByb2R1Y3RcUHJvZHVjdExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Onion-Arch/UI.Server/Components/Admin/Pages/Identity/Item/ItemDetalhes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZG1pblxQYWdlc1xJZGVudGl0eVxJdGVtXEl0ZW1EZXRhbGhlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Onion-Arch/UI.Server/Components/Admin/Pages/Identity/Item/ItemList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZG1pblxQYWdlc1xJZGVudGl0eVxJdGVtXEl0ZW1MaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Onion-Arch/UI.Server/Components/Admin/Pages/Identity/Role/RoleList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZG1pblxQYWdlc1xJZGVudGl0eVxSb2xlXFJvbGVMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Onion-Arch/UI.Server/Components/Admin/Pages/Identity/Role/RoleModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZG1pblxQYWdlc1xJZGVudGl0eVxSb2xlXFJvbGVNb2RhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Onion-Arch/UI.Server/Components/Admin/Pages/Identity/User/UserList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZG1pblxQYWdlc1xJZGVudGl0eVxVc2VyXFVzZXJMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Onion-Arch/UI.Server/Components/Admin/Pages/Identity/User/UserModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZG1pblxQYWdlc1xJZGVudGl0eVxVc2VyXFVzZXJNb2RhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Projects/Onion-Arch/UI.Server/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -170,74 +206,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb25maXJtYURpYWxvZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Onion-Arch/UI.Server/Components/Pages/Admin/Catalog/Category/CategoryList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxDYXRhbG9nXENhdGVnb3J5XENhdGVnb3J5TGlzdC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Onion-Arch/UI.Server/Components/Pages/Admin/Catalog/Product/CreateOrUpdateProduct.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxDYXRhbG9nXFByb2R1Y3RcQ3JlYXRlT3JVcGRhdGVQcm9kdWN0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Onion-Arch/UI.Server/Components/Pages/Admin/Catalog/Product/ProductList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxDYXRhbG9nXFByb2R1Y3RcUHJvZHVjdExpc3QucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Onion-Arch/UI.Server/Components/Pages/Admin/Item/ItemDetalhes.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxJdGVtXEl0ZW1EZXRhbGhlcy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Onion-Arch/UI.Server/Components/Pages/Admin/Item/ItemList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxJdGVtXEl0ZW1MaXN0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Onion-Arch/UI.Server/Components/Pages/Admin/Role/RoleList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxSb2xlXFJvbGVMaXN0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Onion-Arch/UI.Server/Components/Pages/Admin/Role/RoleModal.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxSb2xlXFJvbGVNb2RhbC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Onion-Arch/UI.Server/Components/Pages/Admin/User/UserList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxVc2VyXFVzZXJMaXN0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Onion-Arch/UI.Server/Components/Pages/Admin/User/UserModal.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxVc2VyXFVzZXJNb2RhbC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Onion-Arch/UI.Server/Components/Pages/Auth.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBdXRoLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Projects/Onion-Arch/UI.Server/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Onion-Arch/UI.Server/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Onion-Arch/UI.Server/Components/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Onion-Arch/UI.Server/Components/RedirectToLogin.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSZWRpcmVjdFRvTG9naW4ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Onion-Arch/UI.Server/Components/Routes.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Projects/Onion-Arch/UI.Server/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Onion-Arch/UI.Server/Components/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-rtilqj50sr
-
-[D:/Projects/Onion-Arch/UI.Server/Components/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-4knz10sgzz

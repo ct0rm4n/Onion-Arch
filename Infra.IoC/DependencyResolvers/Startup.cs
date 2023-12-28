@@ -14,6 +14,7 @@ namespace Infra.IoC.DependencyResolvers
     {
         public static void InjectConfigureServices(this WebApplicationBuilder builder)
         {
+            builder.Services.AddCascadingAuthenticationState();
             builder.Services.AddScoped<UserManager<AppUser>>();
             builder.Services.AddScoped<SignInManager<AppUser>>();
             builder.Services.AddScoped<RoleManager<AppRole>>();
@@ -21,7 +22,7 @@ namespace Infra.IoC.DependencyResolvers
             builder.Services.AddScoped<IdentityUserAccessor>();
             builder.Services.AddScoped<IdentityRedirectManager>();
             builder.Services.AddScoped<AuthenticationStateProvider, PersistingRevalidatingAuthenticationStateProvider>();
-            builder.Services.AddSingleton<AuthenticationStateProvider, PersistentAuthenticationStateProvider>();
+            //builder.Services.AddSingleton<AuthenticationStateProvider, PersistentAuthenticationStateProvider>();
             builder.Services.AddScoped<IEmailSender<AppUser>, IdentityNoOpEmailSender>();
             
             builder.Services.AddAuthentication(options =>
