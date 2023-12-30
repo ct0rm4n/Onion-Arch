@@ -1,0 +1,127 @@
+﻿@page "/Admin/Catalog/Post"
+
+@using Application.ViewModels.Post
+@using Microsoft.AspNetCore.Components.QuickGrid
+@inject Services.IPostService service
+@inject IJSRuntime js;
+
+@rendermode InteractiveServer
+<PageTitle>Post list</PageTitle>
+<h3>Post list</h3>
+
+@if (items == null)
+{
+    <p><em>Carregando...</em></p>
+}
+else
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="search-box">
+                                    <input type="search" autofocus @bind="descFilter" @bind:event="oninput" placeholder="Search..." />
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+
+                            </div>
+                            <div class="col-md-2">
+                                <a type="button" data-toggle="modal" data-target="#postModal"
+                                       class="btn btn-primary" @onclick="(() => InitializeItemObject())">
+                                       <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true" b-4knz10sgzz=""></span> Novo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <QuickGrid Items="FilteredItems" Pagination="pagination">
+                            <PropertyColumn Property="@(f => f.Name)" Title="Desc" Sortable="true" >
+                            </PropertyColumn>
+                            <PropertyColumn Property="@(f => f.Html)" Title="Html" Sortable="false" />
+                            <PropertyColumn Property="f => f.Start" Format="dddd, dd MMMM yyyy" Sortable="true" />
+                            <PropertyColumn Property="f => f.End" Format="dddd, dd MMMM yyyy" Sortable="true" />
+                            <TemplateColumn Title="Actions">
+                                <Input type="button" class="btn btn-primary" @onclick="(() => PreparaEdicao(context))" data-toggle="modal" data-target="#postModal" value="Edita" />
+                                <input type="button" class="btn btn-danger" @onclick="(() => PreparaExclusao(context))" data-toggle="modal" data-target="#confirmaExclusaoModal" value="Deleta" />
+                            </TemplateColumn>
+                        </QuickGrid>
+                    </div>
+                    <Paginator State="@pagination" />
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<ConfirmaDialog OnClick="@Delete" />
+<PostDetails postObject=postObject AlteracaoDados="@AlteracaoDados">
+    <Cabecalho>@cabecalho</Cabecalho>
+</PostDetails>
+
+@code {
+    List<PostVM> items;
+
+    PostVM postObject = new PostVM();
+    string cabecalho = string.Empty;
+    string descFilter = string.Empty;
+    IQueryable<PostVM> FilteredItems
+    {
+        get
+        {
+            var result = items.AsQueryable();
+            if (!string.IsNullOrEmpty(descFilter))
+            {
+                result = result.Where(f =>
+                    f.Name.Contains(descFilter, StringComparison.CurrentCultureIgnoreCase) 
+                    || f.Html.Contains(descFilter, StringComparison.CurrentCultureIgnoreCase));
+            }
+            return result;
+        }
+    }
+
+    PaginationState pagination = new PaginationState { ItemsPerPage = 5 };
+
+    protected override async Task OnInitializedAsync()
+    {
+        items = await service.GetList();
+        //await js.InvokeAsync<object>("TestDataTablesAdd", "#table");
+    }
+    
+    private void PreparaEdicao(PostVM item)
+    {
+        cabecalho = "Edita Post";
+        postObject = item;
+    }
+
+    private void PreparaExclusao(PostVM task)
+    {
+        postObject = task;
+    }
+
+    private void InitializeItemObject()
+    {
+        postObject = new PostVM();
+        postObject.Start = DateTime.Now;
+        cabecalho = "Nova Post";
+    }
+    private async void AlteracaoDados()
+    {
+        Thread.Sleep(2000);
+        items = await service.GetList();
+        StateHasChanged();
+    }
+
+    private async Task Delete()
+    {
+        //var task = await service.Delete(itemObject.Id);
+        await js.InvokeAsync<object>("CloseModal", "confirmaExclusaoModal");
+        items = await service.GetList();
+        postObject = new PostVM();
+    }
+    
+}
+

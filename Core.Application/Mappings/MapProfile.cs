@@ -12,7 +12,9 @@ using ViewModels.Supplier;
 using Domain.Entities.Concrates;
 using Application.ViewModels.ToDo;
 using Core.Domain.Entities.Concrates.Catalog;
-using Service.Interface.ViewModels.Product;
+using Application.ViewModels.Post;
+using Application;
+using Application.Dto.ViewModels.Product;
 
 namespace Mapping
 {
@@ -94,6 +96,12 @@ namespace Mapping
             CreateMap<ProductType, ProductTypeSaveVM>().ReverseMap();
             CreateMap<ProductType, ProductTypeVM>().ReverseMap();
             CreateMap<IEnumerable<ProductType>, List<ProductTypeVM>>().ReverseMap();
+            #region Post Mapping
+            CreateMap<Post, PostVM>()
+                .ReverseMap();
+            CreateMap<Post, PostSaveVM>()
+                .ReverseMap();
+            #endregion
         }
     }
 }

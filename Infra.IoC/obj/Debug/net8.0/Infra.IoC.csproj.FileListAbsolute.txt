@@ -23,12 +23,14 @@ C:\Users\usuario\source\repos\BlazorApp3\Infra.IoC\obj\Debug\net8.0\ref\Infra.Io
 D:\Projects\Onion-Arch\Infra.IoC\bin\Debug\net8.0\Infra.IoC.deps.json
 D:\Projects\Onion-Arch\Infra.IoC\bin\Debug\net8.0\Infra.IoC.dll
 D:\Projects\Onion-Arch\Infra.IoC\bin\Debug\net8.0\Infra.IoC.pdb
+D:\Projects\Onion-Arch\Infra.IoC\bin\Debug\net8.0\Application.Dto.dll
 D:\Projects\Onion-Arch\Infra.IoC\bin\Debug\net8.0\Core.Domain.dll
 D:\Projects\Onion-Arch\Infra.IoC\bin\Debug\net8.0\Infra.Persistence.dll
 D:\Projects\Onion-Arch\Infra.IoC\bin\Debug\net8.0\Service.Application.dll
 D:\Projects\Onion-Arch\Infra.IoC\bin\Debug\net8.0\Service.Interface.dll
 D:\Projects\Onion-Arch\Infra.IoC\bin\Debug\net8.0\Infra.Persistence.pdb
 D:\Projects\Onion-Arch\Infra.IoC\bin\Debug\net8.0\Service.Application.pdb
+D:\Projects\Onion-Arch\Infra.IoC\bin\Debug\net8.0\Application.Dto.pdb
 D:\Projects\Onion-Arch\Infra.IoC\bin\Debug\net8.0\Core.Domain.pdb
 D:\Projects\Onion-Arch\Infra.IoC\bin\Debug\net8.0\Service.Interface.pdb
 D:\Projects\Onion-Arch\Infra.IoC\obj\Debug\net8.0\Infra.IoC.csproj.AssemblyReference.cache

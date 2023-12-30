@@ -41,10 +41,12 @@ D:\Projects\Onion-Arch\Infra.Persistence\bin\Debug\net8.0\Infra.Persistence.deps
 D:\Projects\Onion-Arch\Infra.Persistence\bin\Debug\net8.0\Infra.Persistence.runtimeconfig.json
 D:\Projects\Onion-Arch\Infra.Persistence\bin\Debug\net8.0\Infra.Persistence.dll
 D:\Projects\Onion-Arch\Infra.Persistence\bin\Debug\net8.0\Infra.Persistence.pdb
+D:\Projects\Onion-Arch\Infra.Persistence\bin\Debug\net8.0\Application.Dto.dll
 D:\Projects\Onion-Arch\Infra.Persistence\bin\Debug\net8.0\Core.Domain.dll
 D:\Projects\Onion-Arch\Infra.Persistence\bin\Debug\net8.0\Service.Interface.dll
 D:\Projects\Onion-Arch\Infra.Persistence\bin\Debug\net8.0\Service.Interface.pdb
 D:\Projects\Onion-Arch\Infra.Persistence\bin\Debug\net8.0\Core.Domain.pdb
+D:\Projects\Onion-Arch\Infra.Persistence\bin\Debug\net8.0\Application.Dto.pdb
 D:\Projects\Onion-Arch\Infra.Persistence\obj\Debug\net8.0\Infra.Persistence.csproj.AssemblyReference.cache
 D:\Projects\Onion-Arch\Infra.Persistence\obj\Debug\net8.0\Infra.Persistence.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\Onion-Arch\Infra.Persistence\obj\Debug\net8.0\Infra.Persistence.AssemblyInfoInputs.cache

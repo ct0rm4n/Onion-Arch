@@ -1790,6 +1790,19 @@
           }
         }
       },
+      "Application.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FluentValidation": "11.2.2"
+        },
+        "compile": {
+          "bin/placeholder/Application.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.Dto.dll": {}
+        }
+      },
       "Core.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -1859,6 +1872,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Application.Dto": "1.0.0",
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Core.Domain": "1.0.0",
@@ -5182,6 +5196,11 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Application.Dto/1.0.0": {
+      "type": "project",
+      "path": "../Application.Dto/Application.Dto.csproj",
+      "msbuildProject": "../Application.Dto/Application.Dto.csproj"
     },
     "Core.Domain/1.0.0": {
       "type": "project",

@@ -1,4 +1,4 @@
-﻿using Service.Interface.ViewModels.Product;
+﻿using Application.Dto.ViewModels.Product;
 using Core.Domain.Entities.Concrates.Catalog;
 
 namespace Services

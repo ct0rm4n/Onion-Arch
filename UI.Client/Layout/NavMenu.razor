@@ -27,23 +27,33 @@
 
         <li class="nav-item px-3">
             <NavLink class="nav-link" @onclick="()=> catalogSubMenu =! catalogSubMenu">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Produtos
+                <span class="bi bi-caret-right-fill fs-3" aria-hidden="true" style="margin-top: -30px; display: @(catalogSubMenu == false ? "block" : "none")"></span>
+                <span class="bi bi-caret-down-fill fs-3" aria-hidden="true" style="margin-top: -30px; display: @(catalogSubMenu == false ? "none" : "block")"></span>
+                Catalog
             </NavLink>
             @if (catalogSubMenu)
             {
                 <ul class="nav flex-column">
                     <li class="nav-item px-3">
                         <NavLink class="nav-link" href="Admin/Catalog/Categories">
-                            <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Categories
+                            
+                            Categories
                         </NavLink>
-                    </li>                    
+                    </li>
+                    <li class="nav-item px-3">
+                        <NavLink class="nav-link" href="Admin/Catalog/Post">
+                            <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Posts
+                        </NavLink>
+                    </li>
                 </ul>
             }
         </li>
         
         <li class="nav-item px-3">
             <NavLink class="nav-link" @onclick="()=> userSubMenu =! userSubMenu">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> UserManager
+                <span class="bi bi-caret-right-fill fs-3" aria-hidden="true" style="margin-top: -30px; display: @(userSubMenu == false ? "block" : "none")"></span>
+                <span class="bi bi-caret-down-fill fs-3" aria-hidden="true" style="margin-top: -30px; display: @(userSubMenu == false ? "none" : "block")"></span> 
+                UserManager
             </NavLink>
             @if(userSubMenu)
             {

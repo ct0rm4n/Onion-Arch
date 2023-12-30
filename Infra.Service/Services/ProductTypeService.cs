@@ -1,7 +1,7 @@
-﻿using Application.Repositories;
+﻿using Application.Dto.ViewModels.Product;
+using Application.Repositories;
 using AutoMapper;
 using Core.Domain.Entities.Concrates.Catalog;
-using Service.Interface.ViewModels.Product;
 using Services;
 namespace Service.Application.Services
 {

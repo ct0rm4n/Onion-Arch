@@ -23,7 +23,7 @@ namespace DependencyResolvers.Autofac
             Assembly repoServiceAssembly = Assembly.GetAssembly(typeof(AppDbContext));
 
             builder.RegisterAssemblyTypes(executingAssembly, repoServiceAssembly)
-                .Where(t => t.IsClass && !t.IsAbstract && t.Name.EndsWith("Service"))
+                .Where(t => t.IsClass && !t.IsAbstract && (t.Name.EndsWith("Service") || t.Name.EndsWith("Helper")))
                 .AsImplementedInterfaces()
                 .InstancePerLifetimeScope();
         }

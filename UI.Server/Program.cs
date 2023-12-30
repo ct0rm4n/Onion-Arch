@@ -25,7 +25,7 @@ builder.Host.ConfigureServices(x => x.AddAutofac()).UseServiceProviderFactory(ne
     builder.RegisterModule(new AutofacPersistanceModule());
     builder.RegisterModule(new AutofacInnerInfrastructureModule());
 });
-builder.Services.AddRazorPages();//?
+builder.Services.AddRazorPages();
 builder.Services.AddBlazorBootstrap();//todo
 WebApplication app = builder.Build();
 // Configure the HTTP request pipeline.

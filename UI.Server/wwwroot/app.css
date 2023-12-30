@@ -55,3 +55,6 @@ h1:focus {
 .quill-editor, #QuillEditor {
     min-height: 150px !important;
 }
+footer {
+    background-color: #f7f7f7;
+}

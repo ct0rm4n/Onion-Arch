@@ -8,6 +8,14 @@
     <StaticWebAssetProjectMode>Default</StaticWebAssetProjectMode>
 	  <UseBlazorWebAssembly>true</UseBlazorWebAssembly>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Components\Post\PostItem.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Components\Post\PostItem.razor.css" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Blazor.Bootstrap" Version="1.10.4" />
     <PackageReference Include="Blazored.TextEditor" Version="1.1.0" />
@@ -17,7 +25,7 @@
     <PackageReference Include="MudBlazor" Version="6.2.2" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Components\" />
+    <ProjectReference Include="..\Application.Dto\Application.Dto.csproj" />
   </ItemGroup>
 
   

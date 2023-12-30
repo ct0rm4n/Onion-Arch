@@ -1,0 +1,132 @@
+﻿@inject IJSRuntime js;
+
+@using Application.ViewModels.Post
+@using Blazored.TextEditor
+@using FluentValidation
+@inject Services.IPostService service
+@inject IValidator<PostVM> Validator
+
+<div class="modal" tabindex="-1" role="dialog" id="postModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@Cabecalho</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <EditForm Model="@postObject" Enhance EditContext="_editContext" formname="PostVM"
+                           OnValidSubmit="@HandleSubmit">
+                     <DataAnnotationsValidator />
+                     <ValidationSummary />
+                     <div class="form-group mt-2 mb-2">
+                         <label for="Nome">Name</label>
+                         <input type="hidden" id="Id" @bind-value="@postObject.Id" />
+                         <InputText id="Name" class="form-control" @bind-Value="@postObject.Name" />
+                         <ValidationMessage For="@(() => postObject.Name)" />
+                     </div>
+                     <BlazoredTextEditor @ref="@richEditor">
+                         <ToolbarContent>
+                             <select class="ql-header">
+                                 <option selected=""></option>
+                                 <option value="1"></option>
+                                 <option value="2"></option>
+                                 <option value="3"></option>
+                                 <option value="4"></option>
+                                 <option value="5"></option>
+                             </select>
+                             <span class="ql-formats">
+                                 <button class="ql-bold"></button>
+                                 <button class="ql-italic"></button>
+                                 <button class="ql-underline"></button>
+                                 <button class="ql-strike"></button>
+                             </span>
+                             <span class="ql-formats">
+                                 <select class="ql-color"></select>
+                                 <select class="ql-background"></select>
+                             </span>
+                             <span class="ql-formats">
+                                 <button class="ql-list" value="ordered"></button>
+                                 <button class="ql-list" value="bullet"></button>
+                             </span>
+                             <span class="ql-formats">
+                                 <button class="ql-link"></button>
+                             </span>
+                         </ToolbarContent>
+                         <EditorContent>
+                             <h4>This Toolbar works with HTML</h4>
+                             @postObject.Html
+                        </EditorContent>
+                    </BlazoredTextEditor>
+                    <ValidationMessage For="@(() => postObject.Html)" />
+
+                    <div class="form-group mb-3 mt-3">
+                        <label for="Start">Inicio : </label>
+                        <input id="Start" type="date" name="math" @bind-value="@postObject.Start" />
+                        <ValidationMessage For="@(() => postObject.Start)" />
+                    </div>
+
+                    <div class="form-group mb-3 mt-3">
+                        <label for="End">Fim em : </label>
+                        <input id="End" type="date" name="math" @bind-value="@postObject.End" />
+                        <ValidationMessage For="@(() => postObject.End)" />
+                    </div>
+                    <div class="form-group mt-2 mb-2">
+                        <label for="Tags">Tags</label>
+                        <InputText id="Tags" class="form-control" @bind-Value="@postObject.Tags" />
+                        <ValidationMessage For="@(() => postObject.Tags)" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envia</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancela</button>
+                </EditForm>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string? errorMessage;
+    [CascadingParameter] private EditContext _editContext { get; set; } = default!;
+    [Parameter]//[SupplyParameterFromForm(Name = "itemObject", FormName = "itemObject")]
+    public PostVM postObject { get; set; } = new PostVM();
+    BlazoredTextEditor richEditor = default!;
+    [Parameter]
+    public RenderFragment Cabecalho { get; set; }
+
+    [Parameter]
+    public Action AlteracaoDados { get; set; }
+   
+    private async Task CloseItemModal()
+    {
+        await js.InvokeAsync<object>("CloseModal", "itemModal");
+    }
+
+    public async Task HandleInValidSubmit(EditContext editContext)
+    {
+        await UpdateDescription();
+        bool formIsValid = editContext.Validate();
+        var validationResult = await Validator.ValidateAsync(postObject);
+        if (validationResult.IsValid)
+        {
+            await HandleSubmit();
+        }
+        else
+        {
+            return;
+        }
+    }
+    public async Task HandleSubmit()
+    {
+        await UpdateDescription();
+        await service.CreateOrUpdate(postObject);
+        await CloseItemModal();
+        AlteracaoDados?.Invoke();
+    }
+    public async Task UpdateDescription()
+    {
+        postObject.Html = await this.richEditor.GetHTML();
+        StateHasChanged();
+    }
+}

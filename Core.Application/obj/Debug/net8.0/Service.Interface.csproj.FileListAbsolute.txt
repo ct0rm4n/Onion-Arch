@@ -17,7 +17,9 @@ C:\Users\usuario\source\repos\BlazorApp3\Core.Application\obj\Debug\net8.0\ref\S
 D:\Projects\Onion-Arch\Core.Application\bin\Debug\net8.0\Service.Interface.deps.json
 D:\Projects\Onion-Arch\Core.Application\bin\Debug\net8.0\Service.Interface.dll
 D:\Projects\Onion-Arch\Core.Application\bin\Debug\net8.0\Service.Interface.pdb
+D:\Projects\Onion-Arch\Core.Application\bin\Debug\net8.0\Application.Dto.dll
 D:\Projects\Onion-Arch\Core.Application\bin\Debug\net8.0\Core.Domain.dll
+D:\Projects\Onion-Arch\Core.Application\bin\Debug\net8.0\Application.Dto.pdb
 D:\Projects\Onion-Arch\Core.Application\bin\Debug\net8.0\Core.Domain.pdb
 D:\Projects\Onion-Arch\Core.Application\obj\Debug\net8.0\Service.Interface.csproj.AssemblyReference.cache
 D:\Projects\Onion-Arch\Core.Application\obj\Debug\net8.0\Service.Interface.GeneratedMSBuildEditorConfig.editorconfig
