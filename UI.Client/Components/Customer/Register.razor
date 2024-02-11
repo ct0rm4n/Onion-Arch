@@ -1,0 +1,121 @@
+﻿@page "/Customer/Register"
+
+@using System.ComponentModel.DataAnnotations
+@using System.Text
+@using System.Text.Encodings.Web
+@using Application.Dto.Wrappers
+@using System.Text.Json.Serialization
+@using System.Text.Json
+@using ViewModels.AppUser
+@inject ILogger<Register> Logger
+@inject NavigationManager NavigationManager
+@layout UI.Client.Layout.DefaultLayout
+@rendermode InteractiveServer
+
+
+<PageTitle>Register</PageTitle>
+
+<h1>Register</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <StatusMessage Message="@Message" />
+        <EditForm Model="@Input" Enhance EditContext="_editContext" formname="Input"
+                   OnValidSubmit="@HandleInValidSubmit">
+            <DataAnnotationsValidator />
+            <h2>Create a new account.</h2>
+            <hr />
+            <ValidationSummary class="text-danger" role="alert" />
+             <div class="form-floating mb-3">
+                 <InputText @bind-Value="@Input.UserName" id="UserName" class="form-control" autocomplete="username" aria-required="true" />
+                 <label for="email">Email</label>
+                 <ValidationMessage For="() => Input.UserName" class="text-danger" />
+             </div>
+            <div class="form-floating mb-3">
+                 <InputText @bind-Value="@Input.Email" id="Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                <label for="email">Email</label>
+                <ValidationMessage For="() => Input.Email" class="text-danger" />
+            </div>
+            <div class="form-floating mb-3">
+                 <InputText type="password" id="Password" @bind-Value="@Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label for="password">Password</label>
+                <ValidationMessage For="() => Input.Password" class="text-danger" />
+            </div>
+            <div class="form-floating mb-3">
+                 <InputText type="password" id="ConfirmPassword" @bind-Value="@Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label for="confirm-password">Confirm Password</label>
+                <ValidationMessage For="() => Input.ConfirmPassword" class="text-danger" />
+            </div>
+             <div class="form-floating mb-3">
+                 <InputText @bind-Value="@Input.PhoneNumber" id="PhoneNumber" class="form-control" autocomplete="PhoneNumber" aria-required="true" />
+                 <label for="email">PhoneNumber</label>
+                 <ValidationMessage For="() => Input.PhoneNumber" class="text-danger" />
+             </div>
+            <button type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+        </EditForm>
+    </div>
+    
+</div>
+
+ @code {
+    [Inject]
+    IConfiguration Configuration { get; set; }
+    private readonly HttpClient _client = new HttpClient();
+    [CascadingParameter] private EditContext _editContext { get; set; } = default!;
+
+    [Parameter]
+    public AppUserVM Input { get; set; } = new AppUserVM();
+
+    [SupplyParameterFromQuery]
+    private string? ReturnUrl { get; set; }
+
+    public string? Message { get; set; }
+
+    public async Task HandleInValidSubmit(EditContext editContext)
+    {
+        //var user = Activator.CreateInstance<AppUserVM>();
+        using (var client = new HttpClient())
+        {
+            try
+            {
+                string requestUrl = $"{Configuration["ApiRest"]}api/customer/create";
+                StringContent content;
+                string serializedData = JsonSerializer.Serialize(Input);
+                content = new StringContent(serializedData, Encoding.UTF8, "application/json");
+                using (var response = await client.PostAsync(requestUrl, content))
+                {
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        string errorResponse = await response.Content.ReadAsStringAsync();
+                        Message = errorResponse;
+                    }
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log or handle exceptions gracefully
+                throw new Exception($"Error during POST request: {ex.Message}");
+            }
+        }
+    }
+
+    private sealed class InputModel
+    {
+        [Required]
+        [EmailAddress]
+        [Display(Name = "Email")]
+        public string Email { get; set; } = "";
+
+        [Required]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+        [DataType(DataType.Password)]
+        [Display(Name = "Password")]
+        public string Password { get; set; } = "";
+
+        [DataType(DataType.Password)]
+        [Display(Name = "Confirm password")]
+        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        public string ConfirmPassword { get; set; } = "";
+    }
+}
