@@ -4,7 +4,7 @@ namespace Service.Application.Services.Misc
     public class CurrencyServices
     {
         //USD-BRL,EUR-BRL,BTC-BRL
-        public async Task GetCurrencyBRL(string[] currencyName)
+        public async Task<string> GetCurrencyBRL(string[] currencyName)
         {
             var options = new RestClientOptions("https://economia.awesomeapi.com.br")
             {
@@ -13,7 +13,7 @@ namespace Service.Application.Services.Misc
             var client = new RestClient(options);
             var request = new RestRequest($"/last/{string.Join(",", currencyName)}", Method.Get);
             RestResponse response = await client.ExecuteAsync(request);
-            Console.WriteLine(response.Content);
+            return response.Content;
         }
 
     }
