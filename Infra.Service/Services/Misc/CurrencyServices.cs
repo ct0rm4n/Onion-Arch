@@ -1,4 +1,6 @@
-﻿using RestSharp;
+﻿using Application.Dto.DTOs;
+using RestSharp;
+using System.Text.Json;
 namespace Service.Application.Services.Misc
 {
     public class CurrencyServices
@@ -15,9 +17,16 @@ namespace Service.Application.Services.Misc
             RestResponse response = await client.ExecuteAsync(request);
             return response.Content;
         }
-        public async Task UpdateCurrencyGlobal()
+        public async Task UpdateCurrencyGlobal(string rawReponse)
         {
+            try
+            {
+                var currencyList = JsonSerializer.Deserialize<CurrencyDto>(rawReponse);
+            }
+            catch(Exception ex)
+            {
 
+            }
         }
     }
 }
