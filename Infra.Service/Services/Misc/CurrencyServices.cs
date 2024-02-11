@@ -15,6 +15,9 @@ namespace Service.Application.Services.Misc
             RestResponse response = await client.ExecuteAsync(request);
             return response.Content;
         }
+        public async Task UpdateCurrencyGlobal()
+        {
 
+        }
     }
 }
