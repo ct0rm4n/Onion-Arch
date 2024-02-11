@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Infra.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f891dbe71e65e216aec45e5bd1546883630861f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0b4b50d9f999343903dace16fcd4e5598fcadb0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Infra.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Infra.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

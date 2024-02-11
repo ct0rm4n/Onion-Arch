@@ -6,6 +6,8 @@ using ViewModels.Abstracts;
 using Wrappers;
 using Domain.Entities.Abstarct;
 using Domain.Enums;
+using Application.ViewModels.Post;
+using Microsoft.AspNetCore.Http;
 namespace Services
 {
     public class GenericService<SaveViewModel, ViewModel, Entity> : IGenericService<SaveViewModel, ViewModel, Entity>
@@ -64,6 +66,9 @@ namespace Services
         {
             Entity entity = await _repository.FirstOrDefaultAsync(expression);
             ViewModel viewModel = _mapper.Map<ViewModel>(entity);
+            if(viewModel is null)
+                return Result<ViewModel>.Fail(StatusCodes.Status302Found, new List<string>() { "Invalid Id." });
+
             return Result<ViewModel>.Success(viewModel);
         }
 

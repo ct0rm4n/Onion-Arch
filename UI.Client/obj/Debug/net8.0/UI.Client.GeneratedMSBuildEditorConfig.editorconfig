@@ -58,6 +58,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQb3N0XFBvc3RMaXN0UGFnZ2VkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-7268s53ebj
 
+[D:/Projects/Onion-Arch/UI.Client/Components/Product/ProductList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQcm9kdWN0XFByb2R1Y3RMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-guag1gci2x
+
+[D:/Projects/Onion-Arch/UI.Client/Layout/DefaultLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XERlZmF1bHRMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-lvcdg84mzj
+
 [D:/Projects/Onion-Arch/UI.Client/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-aasultgbao
@@ -65,7 +73,3 @@ build_metadata.AdditionalFiles.CssScope = b-aasultgbao
 [D:/Projects/Onion-Arch/UI.Client/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qmr0zonfjt
-
-[D:/Projects/Onion-Arch/UI.Client/Pages/DefaultLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVmYXVsdExheW91dC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-4sgx7w1zts

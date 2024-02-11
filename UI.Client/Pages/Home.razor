@@ -1,8 +1,17 @@
 ﻿@page "/"
-@layout DefaultLayout
+@layout UI.Client.Layout.DefaultLayout
 
 <PageTitle>Home</PageTitle>
+
 <UI.Client.Components.Banner.BannerHome/>
 
+<UI.Client.Components.Product.ProductList />
+
 <UI.Client.Components.Post.PostListPagged/>
+@code{
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+}
 

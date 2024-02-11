@@ -7,18 +7,20 @@ namespace UI.Client.Components.Post
 {
     public partial class PostListPagged
     {
+        [Inject]
+        IConfiguration Configuration { get; set; }
         private readonly HttpClient _client = new HttpClient();
         public List<PostVM> listPosts { get; set;  }
         int PageIndex = 0;
         int TotalPages = 1;
-
+        
         protected override async Task OnInitializedAsync()
         {
             var respose = new PagedResponse<List<PostVM>>(null, 0, int.MaxValue);
             if (listPosts is null)
             {
                 PageIndex = 1;
-                respose = await _client.GetFromJsonAsync<PagedResponse<List<PostVM>>>("https://localhost:7279/api/post/getall?PageSize=6");
+                respose = await _client.GetFromJsonAsync<PagedResponse<List<PostVM>>>($"{Configuration["ApiRest"]}api/post/getall?PageSize=6");
                 listPosts = respose.Data;
                 TotalPages = respose.TotalPages;
             }
@@ -31,9 +33,8 @@ namespace UI.Client.Components.Post
         }
         private async Task OpenPage(int page)
         {
-            //var respose = new PagedResponse<List<PostVM>>(null, 0, int.MaxValue);
             PageIndex = page;
-            var respose = await _client.GetFromJsonAsync<PagedResponse<List<PostVM>>>($"https://localhost:7279/api/post/getall?PageNumber={page}&PageSize=6");
+            var respose = await _client.GetFromJsonAsync<PagedResponse<List<PostVM>>>($"{Configuration["ApiRest"]}api/post/getall?PageNumber={page}&PageSize=6");
             listPosts = respose.Data;
             StateHasChanged();
         }

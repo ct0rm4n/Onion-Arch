@@ -6,6 +6,8 @@ using Application.ViewModels.Post;
 using Application;
 using Application.Dto.ViewModels.Wrappers;
 using Application.Dto.Helpers;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Wrappers;
 
 namespace API.Server.Controllers.Post
 {
@@ -28,11 +30,12 @@ namespace API.Server.Controllers.Post
             {
                 var route = Request.Path.Value;
                 var validFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
-                var pagedData = (await _repository.GetAll()).Data
-                   .Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
+                var data = (await _repository.GetList(true));
+                var pagedData = data.Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
                    .Take(validFilter.PageSize)
                    .ToList();
-                var totalRecords = (await _repository.GetAll()).Data.Count();
+
+                var totalRecords = data.Count();
                 var pagedReponse = PaginationHelper.CreatePagedReponse<PostVM>(pagedData, validFilter, totalRecords, route, "https://localhost:7279");
                 return Ok(pagedReponse);
             }
@@ -41,37 +44,46 @@ namespace API.Server.Controllers.Post
                 _logger.LogError(e, e.Message + "/n Validation Exception Details.");
                 return BadRequest(e.Message);
             }
+            catch (Exception e)
+            {
+                _logger.LogError(e, e.Message + "/n Validation exception Details.");
+                return BadRequest(e.Message);
+            }
         }
-        [HttpGet("GetBy")]
-        //[ProducesResponseType(StatusCodes.Status200OK)]
-        //[ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<Application.ViewModels.Post.PostVM>> GetByIdAsync([FromQuery] int id)
+        [HttpGet("GetById")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Result<PostVM>))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BadRequestObjectResult))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(JsonResult))]
+        [ProducesResponseType(StatusCodes.Status302Found, Type = typeof(NotFoundObjectResult))]
+        public async Task<ActionResult<Result<PostVM>>> GetByIdAsync([FromQuery] int id)
         {
             try
             {
-                if (id <= 0) return BadRequest(new { Id = "Id", menssage = "Invalid Id." });
+                if (id <= 0) 
+                    return Result<PostVM>.Fail(StatusCodes.Status302Found, new List<string>(){ "Invalid Id." });
 
-                var entity = await _repository.FirstOrDefaultAsync(x=>x.Id == id);
-                return entity.Data;
+                var entity = await _repository.FirstOrDefaultAsync(x => x.Id == id);
+
+                return entity;
             }
-            catch (ValidationException e)
+            catch (Exception e)
             {
-                _logger.LogError(e, e.Message + "/n Validation Exception Details.");
-                return Problem(e.Message);
+                _logger.LogError(e, e.Message);
+                return Result<PostVM>.Fail(StatusCodes.Status500InternalServerError, new List<string>() { e.Message, "Exception Details." });
             }
         }
         [HttpPost("Create")]
-        public async Task<PostSaveVM?> Create([FromForm] PostSaveVM model)
+        public async Task<ActionResult<PostSaveVM?>> Create([FromForm] PostSaveVM model)
         {
             try
             {
                 await _repository.AddAsync(model);
                 return model;
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                _logger.Log(LogLevel.Error, $"{HttpStatusCode.InternalServerError} {ex.Message}");
-                return null;
+                _logger.LogError(e, e.Message + "/n Validation exception Details.");
+                return BadRequest(e.Message);
             }
         }
     }

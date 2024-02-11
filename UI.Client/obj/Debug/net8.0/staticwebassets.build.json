@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Yi0yOXuNgIdw180cV5+VIswrpkIE9UX/nCRao7X8+8U=",
+  "Hash": "SCRpZZaYxVGutr8vZHxYt2wXsFvYvkvWr7VwKcoDms4=",
   "Source": "UI.Client",
   "BasePath": "/",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\Blazor.Bootstrap.bundle.scp.css",
+      "Identity": "C:\\Users\\torman\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\Blazor.Bootstrap.bundle.scp.css",
       "SourceId": "Blazor.Bootstrap",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\torman\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\",
       "BasePath": "_content/Blazor.Bootstrap",
       "RelativePath": "Blazor.Bootstrap.bundle.scp.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\Blazor.Bootstrap.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\Blazor.Bootstrap.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\blazor.bootstrap.css",
+      "Identity": "C:\\Users\\torman\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\blazor.bootstrap.css",
       "SourceId": "Blazor.Bootstrap",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\torman\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\",
       "BasePath": "_content/Blazor.Bootstrap",
       "RelativePath": "blazor.bootstrap.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\blazor.bootstrap.css"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\blazor.bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\blazor.bootstrap.js",
+      "Identity": "C:\\Users\\torman\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\blazor.bootstrap.js",
       "SourceId": "Blazor.Bootstrap",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\torman\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\",
       "BasePath": "_content/Blazor.Bootstrap",
       "RelativePath": "blazor.bootstrap.js",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\blazor.bootstrap.js"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\blazor.bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\icon\\128X128.png",
+      "Identity": "C:\\Users\\torman\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\icon\\128X128.png",
       "SourceId": "Blazor.Bootstrap",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\torman\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\",
       "BasePath": "_content/Blazor.Bootstrap",
       "RelativePath": "icon/128X128.png",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\usuario\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\icon\\128X128.png"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\blazor.bootstrap\\1.10.4\\staticwebassets\\icon\\128X128.png"
     },
     {
-      "Identity": "C:\\Users\\usuario\\.nuget\\packages\\blazored.texteditor\\1.1.0\\staticwebassets\\Blazored-BlazorQuill.js",
+      "Identity": "C:\\Users\\torman\\.nuget\\packages\\blazored.texteditor\\1.1.0\\staticwebassets\\Blazored-BlazorQuill.js",
       "SourceId": "Blazored.TextEditor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\usuario\\.nuget\\packages\\blazored.texteditor\\1.1.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\torman\\.nuget\\packages\\blazored.texteditor\\1.1.0\\staticwebassets\\",
       "BasePath": "_content/Blazored.TextEditor",
       "RelativePath": "Blazored-BlazorQuill.js",
       "AssetKind": "All",
@@ -109,13 +109,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\usuario\\.nuget\\packages\\blazored.texteditor\\1.1.0\\staticwebassets\\Blazored-BlazorQuill.js"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\blazored.texteditor\\1.1.0\\staticwebassets\\Blazored-BlazorQuill.js"
     },
     {
-      "Identity": "C:\\Users\\usuario\\.nuget\\packages\\blazored.texteditor\\1.1.0\\staticwebassets\\quill-blot-formatter.min.js",
+      "Identity": "C:\\Users\\torman\\.nuget\\packages\\blazored.texteditor\\1.1.0\\staticwebassets\\quill-blot-formatter.min.js",
       "SourceId": "Blazored.TextEditor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\usuario\\.nuget\\packages\\blazored.texteditor\\1.1.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\torman\\.nuget\\packages\\blazored.texteditor\\1.1.0\\staticwebassets\\",
       "BasePath": "_content/Blazored.TextEditor",
       "RelativePath": "quill-blot-formatter.min.js",
       "AssetKind": "All",
@@ -128,13 +128,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\usuario\\.nuget\\packages\\blazored.texteditor\\1.1.0\\staticwebassets\\quill-blot-formatter.min.js"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\blazored.texteditor\\1.1.0\\staticwebassets\\quill-blot-formatter.min.js"
     },
     {
-      "Identity": "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "Identity": "C:\\Users\\torman\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\torman\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "AssetKind": "All",
@@ -147,13 +147,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\QuickGrid.razor.js",
+      "Identity": "C:\\Users\\torman\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\QuickGrid.razor.js",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\torman\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "QuickGrid.razor.js",
       "AssetKind": "All",
@@ -166,13 +166,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\QuickGrid.razor.js"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\QuickGrid.razor.js"
     },
     {
-      "Identity": "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.0\\staticwebassets\\AuthenticationService.js",
+      "Identity": "C:\\Users\\torman\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.0\\staticwebassets\\AuthenticationService.js",
       "SourceId": "Microsoft.AspNetCore.Components.WebAssembly.Authentication",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\torman\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.0\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication",
       "RelativePath": "AuthenticationService.js",
       "AssetKind": "All",
@@ -185,13 +185,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.0\\staticwebassets\\AuthenticationService.js"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.0\\staticwebassets\\AuthenticationService.js"
     },
     {
-      "Identity": "C:\\Users\\usuario\\.nuget\\packages\\mudblazor\\6.2.2\\staticwebassets\\MudBlazor.min.css",
+      "Identity": "C:\\Users\\torman\\.nuget\\packages\\mudblazor\\6.2.2\\staticwebassets\\MudBlazor.min.css",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\usuario\\.nuget\\packages\\mudblazor\\6.2.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\torman\\.nuget\\packages\\mudblazor\\6.2.2\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css",
       "AssetKind": "All",
@@ -204,13 +204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\usuario\\.nuget\\packages\\mudblazor\\6.2.2\\staticwebassets\\MudBlazor.min.css"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\mudblazor\\6.2.2\\staticwebassets\\MudBlazor.min.css"
     },
     {
-      "Identity": "C:\\Users\\usuario\\.nuget\\packages\\mudblazor\\6.2.2\\staticwebassets\\MudBlazor.min.js",
+      "Identity": "C:\\Users\\torman\\.nuget\\packages\\mudblazor\\6.2.2\\staticwebassets\\MudBlazor.min.js",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\usuario\\.nuget\\packages\\mudblazor\\6.2.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\torman\\.nuget\\packages\\mudblazor\\6.2.2\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js",
       "AssetKind": "All",
@@ -223,7 +223,45 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\usuario\\.nuget\\packages\\mudblazor\\6.2.2\\staticwebassets\\MudBlazor.min.js"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\mudblazor\\6.2.2\\staticwebassets\\MudBlazor.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\torman\\.nuget\\packages\\tinymce.blazor\\1.0.4\\staticwebassets\\TinyMce.Blazor.lib.module.js",
+      "SourceId": "TinyMCE.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\torman\\.nuget\\packages\\tinymce.blazor\\1.0.4\\staticwebassets\\",
+      "BasePath": "_content/TinyMCE.Blazor",
+      "RelativePath": "TinyMce.Blazor.lib.module.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\tinymce.blazor\\1.0.4\\staticwebassets\\TinyMce.Blazor.lib.module.js"
+    },
+    {
+      "Identity": "C:\\Users\\torman\\.nuget\\packages\\tinymce.blazor\\1.0.4\\staticwebassets\\tinymce-blazor.js",
+      "SourceId": "TinyMCE.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\torman\\.nuget\\packages\\tinymce.blazor\\1.0.4\\staticwebassets\\",
+      "BasePath": "_content/TinyMCE.Blazor",
+      "RelativePath": "tinymce-blazor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\tinymce.blazor\\1.0.4\\staticwebassets\\tinymce-blazor.js"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Application.Dto.pdb",
@@ -299,7 +337,7 @@
       "AssetTraitValue": "boot",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\8.0.0\\build\\net8.0\\blazor.webassembly.js"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\8.0.0\\build\\net8.0\\blazor.webassembly.js"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\BlazorBootstrap.wasm",
@@ -356,7 +394,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.0\\runtimes\\browser-wasm\\native\\dotnet.js"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.1\\runtimes\\browser-wasm\\native\\dotnet.js"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
@@ -375,15 +413,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.0\\runtimes\\browser-wasm\\native\\dotnet.js.map"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.1\\runtimes\\browser-wasm\\native\\dotnet.js.map"
     },
     {
-      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.0.cx60pm2snx.js",
+      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.1.enyzgey6cq.js",
       "SourceId": "UI.Client",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.8.0.0.cx60pm2snx.js",
+      "RelativePath": "_framework/dotnet.native.8.0.1.enyzgey6cq.js",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -394,7 +432,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.0\\runtimes\\browser-wasm\\native\\dotnet.native.js"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.1\\runtimes\\browser-wasm\\native\\dotnet.native.js"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
@@ -413,15 +451,15 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.0\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.1\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
     },
     {
-      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.0.14kkjimq5k.js",
+      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.1.q9y9iu6chb.js",
       "SourceId": "UI.Client",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.8.0.0.14kkjimq5k.js",
+      "RelativePath": "_framework/dotnet.runtime.8.0.1.q9y9iu6chb.js",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -432,7 +470,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.0\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.1\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
@@ -451,7 +489,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.0\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.1\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\FluentValidation.wasm",
@@ -489,7 +527,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.0\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.1\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
@@ -508,7 +546,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.0\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.1\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
@@ -527,7 +565,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.0\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\torman\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.1\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.wasm",
@@ -4216,6 +4254,25 @@
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\webcil\\System.Xml.XPath.XDocument.wasm"
     },
     {
+      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\TinyMCE.Blazor.wasm",
+      "SourceId": "UI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/TinyMCE.Blazor.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\webcil\\TinyMCE.Blazor.wasm"
+    },
+    {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\UI.Client.pdb",
       "SourceId": "UI.Client",
       "SourceType": "Computed",
@@ -4328,25 +4385,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Abstractions.wasm"
-    },
-    {
-      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\14kkjimq5k.gz",
-      "SourceId": "UI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.8.0.0.14kkjimq5k.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.0.14kkjimq5k.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.0.14kkjimq5k.js"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\182vyqsqpg.gz",
@@ -4708,6 +4746,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Windows.wasm"
+    },
+    {
+      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\3vmx4ktmk3.gz",
+      "SourceId": "UI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.js.map.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\3zif5zded2.gz",
@@ -5432,25 +5489,6 @@
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Drawing.wasm"
     },
     {
-      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\a1kopbnbpa.gz",
-      "SourceId": "UI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.js.map.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
-    },
-    {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\a29rbdg2mm.gz",
       "SourceId": "UI.Client",
       "SourceType": "Computed",
@@ -5544,6 +5582,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Runtime.Serialization.Formatters.wasm"
+    },
+    {
+      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\b2traafgov.gz",
+      "SourceId": "UI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_CJK.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\b7ngdeojk8.gz",
@@ -5755,25 +5812,6 @@
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Net.HttpListener.wasm"
     },
     {
-      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\cx60pm2snx.gz",
-      "SourceId": "UI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.8.0.0.cx60pm2snx.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.0.cx60pm2snx.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.0.cx60pm2snx.js"
-    },
-    {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\d3dve36vmt.gz",
       "SourceId": "UI.Client",
       "SourceType": "Computed",
@@ -5829,25 +5867,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Linq.Parallel.wasm"
-    },
-    {
-      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\d9w2qreyfa.gz",
-      "SourceId": "UI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.wasm.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\dbobbzs0x0.gz",
@@ -5926,23 +5945,23 @@
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Private.CoreLib.wasm"
     },
     {
-      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\ds6xula2r2.gz",
+      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\e4mmqokcri.gz",
       "SourceId": "UI.Client",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/icudt_CJK.dat.gz",
+      "RelativePath": "_framework/dotnet.runtime.js.map.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
+      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat"
+      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\e7g161lqun.gz",
@@ -6000,6 +6019,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Xml.XPath.wasm"
+    },
+    {
+      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\enyzgey6cq.gz",
+      "SourceId": "UI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.native.8.0.1.enyzgey6cq.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.1.enyzgey6cq.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.1.enyzgey6cq.js"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\etg9skpcti.gz",
@@ -6095,6 +6133,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.wasm"
+    },
+    {
+      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\fk8fiu7poe.gz",
+      "SourceId": "UI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.native.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\fo90qm7iof.gz",
@@ -6306,6 +6363,25 @@
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Configuration.wasm"
     },
     {
+      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\gy1r23l5mm.gz",
+      "SourceId": "UI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js"
+    },
+    {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\h8x7xexqkg.gz",
       "SourceId": "UI.Client",
       "SourceType": "Computed",
@@ -6418,6 +6494,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.wasm"
+    },
+    {
+      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\i4kflxtstz.gz",
+      "SourceId": "UI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/TinyMCE.Blazor.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\TinyMCE.Blazor.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\TinyMCE.Blazor.wasm"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\i6yyeadpm3.gz",
@@ -6608,6 +6703,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.ComponentModel.TypeConverter.wasm"
+    },
+    {
+      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\jkz6x98kwn.gz",
+      "SourceId": "UI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/blazor.webassembly.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\k3fp26euzf.gz",
@@ -6838,25 +6952,6 @@
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.VisualBasic.Core.wasm"
     },
     {
-      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\mjpqzpv3p0.gz",
-      "SourceId": "UI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js"
-    },
-    {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\mr664jpyqb.gz",
       "SourceId": "UI.Client",
       "SourceType": "Computed",
@@ -6988,25 +7083,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Console.wasm"
-    },
-    {
-      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\nu759xh11b.gz",
-      "SourceId": "UI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_no_CJK.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\nvwxscvco5.gz",
@@ -7218,25 +7294,6 @@
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.wasm"
     },
     {
-      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\plks20g9dg.gz",
-      "SourceId": "UI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/blazor.webassembly.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js"
-    },
-    {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\pmnk4ho3gs.gz",
       "SourceId": "UI.Client",
       "SourceType": "Computed",
@@ -7332,6 +7389,25 @@
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.wasm"
     },
     {
+      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\q9y9iu6chb.gz",
+      "SourceId": "UI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.runtime.8.0.1.q9y9iu6chb.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.1.q9y9iu6chb.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.1.q9y9iu6chb.js"
+    },
+    {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\qieimqfxza.gz",
       "SourceId": "UI.Client",
       "SourceType": "Computed",
@@ -7387,6 +7463,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Globalization.wasm"
+    },
+    {
+      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\r1pexsvrvk.gz",
+      "SourceId": "UI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_no_CJK.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\r2hmehwr33.gz",
@@ -7463,6 +7558,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Net.WebClient.wasm"
+    },
+    {
+      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\s579x8ygrc.gz",
+      "SourceId": "UI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_EFIGS.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\t22h27rg5h.gz",
@@ -7883,25 +7997,6 @@
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.QuickGrid.wasm"
     },
     {
-      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\w0j52lx1dm.gz",
-      "SourceId": "UI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js.map.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map"
-    },
-    {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\w19qigf00v.gz",
       "SourceId": "UI.Client",
       "SourceType": "Computed",
@@ -7938,25 +8033,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Reflection.wasm"
-    },
-    {
-      "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\ws78lhkh21.gz",
-      "SourceId": "UI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_EFIGS.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Projects\\Onion-Arch\\UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
     },
     {
       "Identity": "D:\\Projects\\Onion-Arch\\UI.Client\\obj\\Debug\\net8.0\\compressed\\wxx1vsu29e.gz",

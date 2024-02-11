@@ -461,3 +461,4 @@ D:\Projects\Onion-Arch\UI.Server\obj\Debug\net8.0\UI.Server.pdb
 D:\Projects\Onion-Arch\UI.Server\obj\Debug\net8.0\UI.Server.genruntimeconfig.cache
 D:\Projects\Onion-Arch\UI.Server\obj\Debug\net8.0\ref\UI.Server.dll
 D:\Projects\Onion-Arch\UI.Server\obj\Debug\net8.0\UI.Server.MvcApplicationPartsAssemblyInfo.cs
+D:\Projects\Onion-Arch\UI.Server\bin\Debug\net8.0\TinyMCE.Blazor.dll

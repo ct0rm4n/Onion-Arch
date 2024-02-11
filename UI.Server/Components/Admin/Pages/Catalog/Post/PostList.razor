@@ -6,8 +6,9 @@
 @inject IJSRuntime js;
 
 @rendermode InteractiveServer
+
 <PageTitle>Post list</PageTitle>
-<h3>Post list</h3>
+<h3><span class="bi bi-card-text" aria-hidden="true" b-4knz10sgzz=""></span> Post list</h3>
 
 @if (items == null)
 {
@@ -32,7 +33,7 @@ else
                             <div class="col-md-2">
                                 <a type="button" data-toggle="modal" data-target="#postModal"
                                        class="btn btn-primary" @onclick="(() => InitializeItemObject())">
-                                       <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true" b-4knz10sgzz=""></span> Novo
+                                    <span class="bi bi-plus-circle-fill" aria-hidden="true" b-4knz10sgzz=""></span> Novo
                                 </a>
                             </div>
                         </div>
@@ -87,10 +88,10 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        items = await service.GetList();
+        items = await service.GetList(false);
         //await js.InvokeAsync<object>("TestDataTablesAdd", "#table");
     }
-    
+
     private void PreparaEdicao(PostVM item)
     {
         cabecalho = "Edita Post";
@@ -106,20 +107,21 @@ else
     {
         postObject = new PostVM();
         postObject.Start = DateTime.Now;
+        postObject.End = (DateTime.Now).AddYears(2);
         cabecalho = "Nova Post";
     }
     private async void AlteracaoDados()
     {
         Thread.Sleep(2000);
-        items = await service.GetList();
+        items = await service.GetList(false);
         StateHasChanged();
     }
 
     private async Task Delete()
     {
-        //var task = await service.Delete(itemObject.Id);
+        await service.DeleteAsync(postObject.Id);
         await js.InvokeAsync<object>("CloseModal", "confirmaExclusaoModal");
-        items = await service.GetList();
+        items = await service.GetList(false);
         postObject = new PostVM();
     }
     

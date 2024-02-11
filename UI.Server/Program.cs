@@ -12,7 +12,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
-    .AddInteractiveWebAssemblyComponents();
+    .AddHubOptions(opt =>
+    {
+        opt.DisableImplicitFromServicesParameters = true;//for upload
+    })
+    .AddInteractiveWebAssemblyComponents(); 
 
 builder.Services.AddWebLayerInjections();
 builder.Services.AddSession();

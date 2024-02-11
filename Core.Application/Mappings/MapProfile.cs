@@ -5,16 +5,13 @@ using ViewModels.AppUser;
 using ViewModels.AppUserRole;
 using ViewModels.Category;
 using ViewModels.Product;
-using ViewModels.ProductFeature;
-using ViewModels.ProductSupplier;
-using ViewModels.AppRole;
-using ViewModels.Supplier;
 using Domain.Entities.Concrates;
 using Application.ViewModels.ToDo;
 using Core.Domain.Entities.Concrates.Catalog;
 using Application.ViewModels.Post;
 using Application;
 using Application.Dto.ViewModels.Product;
+using Application.Dto.ViewModels.Banner;
 
 namespace Mapping
 {
@@ -30,6 +27,7 @@ namespace Mapping
                     .ReverseMap();
             
             CreateMap<ProductVM, ProductSaveVM>().ReverseMap();
+
             #endregion
 
             #region Category Mapping
@@ -88,18 +86,29 @@ namespace Mapping
                 .ForMember(dest => dest.AppRoleVM, act => act.MapFrom(src => src.Role))
                 .ReverseMap();
             #endregion
+
             #region ToDo Mapping
             CreateMap<ToDo, ToDoVM>()
                 .ReverseMap();
             #endregion
 
+            #region Product
             CreateMap<ProductType, ProductTypeSaveVM>().ReverseMap();
             CreateMap<ProductType, ProductTypeVM>().ReverseMap();
             CreateMap<IEnumerable<ProductType>, List<ProductTypeVM>>().ReverseMap();
+            #endregion
+
             #region Post Mapping
             CreateMap<Post, PostVM>()
                 .ReverseMap();
             CreateMap<Post, PostSaveVM>()
+                .ReverseMap();
+            #endregion
+
+            #region BannerMapping
+            CreateMap<Banner, BannerVM>()
+                .ReverseMap();
+            CreateMap<Banner, BannerSaveVM>()
                 .ReverseMap();
             #endregion
         }

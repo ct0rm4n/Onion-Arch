@@ -2,6 +2,7 @@
 
 @inject IJSRuntime js;
 @inject Services.IAppRoleService servicesRoleUser
+@inject IConfiguration Configuration
 @using ViewModels.AppRole
 
 @rendermode InteractiveServer
@@ -102,6 +103,7 @@ else
     private async void AlteracaoDados()
     {
         await GetRoleList();
+        await js.InvokeAsync<object>("CloseModal", "confirmaExclusaoModal");
         StateHasChanged();
     }
 
@@ -116,6 +118,7 @@ else
 
     private async Task GetRoleList()
     {
-        roles = await httpClient.GetFromJsonAsync<List<AppRoleVM>>("https://localhost:7279/api/role");
+        var path = Configuration["ApiRest"];
+        roles = await httpClient.GetFromJsonAsync<List<AppRoleVM>>($"{path}api/role/getall");
     }
 }

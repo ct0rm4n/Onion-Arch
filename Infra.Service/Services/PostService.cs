@@ -5,6 +5,7 @@ using Application.ViewModels.ToDo;
 using Application;
 using Core.Domain.Entities.Concrates.Catalog;
 using Application.ViewModels.Post;
+using Domain.Enums;
 
 namespace Services
 {
@@ -16,10 +17,17 @@ namespace Services
             _repositoryPost = repositoryPost;
         }
 
-        public async Task<List<PostVM>> GetList()
-        {
+        public async Task<List<PostVM>> GetList(bool publish = true)
+        {            
+            List<Post> list =  _repositoryPost.GetAllAsIQueryable()
+                .Where(x=>x.Status != (Status.Deleted)).ToList<Post>();
+            if(publish)
+            {
+                list = (from posts in list
+                        where posts.Publish == true
+                        select posts).ToList<Post>();
+            }
             List<PostVM> post = new List<PostVM>();
-            List<Post> list = _repositoryPost.GetAllAsIQueryable().ToList();
             foreach (var itemEntity in list)
             {
                 post.Add(_mapper.Map<PostVM>(itemEntity));
