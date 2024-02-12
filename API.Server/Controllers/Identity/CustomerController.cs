@@ -16,6 +16,7 @@ using Services;
 using Application.Dto.Helpers;
 using Application.Dto.ViewModels.Wrappers;
 using ViewModels.Product;
+using Wrappers;
 
 namespace API.Server.Controllers
 {
@@ -66,6 +67,10 @@ namespace API.Server.Controllers
             }
         }
         [HttpGet("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Result<AppUserVM>))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BadRequestObjectResult))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(JsonResult))]
+        [ProducesResponseType(StatusCodes.Status302Found, Type = typeof(NotFoundObjectResult))]
         public async Task<ActionResult> Get(int id)
         {
             try
