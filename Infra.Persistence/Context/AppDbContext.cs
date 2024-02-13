@@ -20,8 +20,9 @@ namespace Infraestrutura.Context
         public DbSet<Category> Categories { get; set; }
         public DbSet<Post> Post { get; set; }
         public DbSet<ToDo> ToDos { get; set; }
-
         public DbSet<Banner> Banners { get; set; }
+        public DbSet<CurrencyLocale> Currency { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {            
             base.OnModelCreating(modelBuilder);//We've to call this first in order to avoid creating extra columns comes from Identity        

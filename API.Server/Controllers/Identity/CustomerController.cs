@@ -12,6 +12,11 @@ using Domain.Entities.Concrates;
 using AutoMapper;
 using Application.ViewModels.Post;
 using Services.Account;
+using Services;
+using Application.Dto.Helpers;
+using Application.Dto.ViewModels.Wrappers;
+using ViewModels.Product;
+using Wrappers;
 
 namespace API.Server.Controllers
 {
@@ -25,10 +30,10 @@ namespace API.Server.Controllers
         private readonly IUserStore<AppUser> _userStore;
         private readonly SignInManager<AppUser> _SignInManager;
         private readonly IEmailSender<AppUser> _EmailSender;
-        
+        private readonly Services.IAppUserService _servicesUser;
         public CustomerController(ILogger<CustomerController> logger, IMapper mapper,
             UserManager<AppUser> userManager, IUserStore<AppUser> userStore,
-            SignInManager<AppUser> SignInManager, IEmailSender<AppUser> EmailSender) 
+            SignInManager<AppUser> SignInManager, IEmailSender<AppUser> EmailSender, IAppUserService servicesUser) 
         { 
             _logger = logger;
             _mapper = mapper;
@@ -36,25 +41,43 @@ namespace API.Server.Controllers
             _userStore = userStore;
             _SignInManager = SignInManager;
             _EmailSender = EmailSender;
+            _servicesUser = servicesUser;
         }
 
         [HttpGet("GetAll")]
-        public async Task<ActionResult> GetAll()
+        public async Task<ActionResult> GetAll([FromQuery] PaginationFilter filter)
         {
             try
             {
-                return Ok();
+                ;
+                var route = Request.Path.Value;
+                var validFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
+                var data = ((await _servicesUser.GetAllAppUsersWithRoles()).Data.ToList()).Select(product => _mapper.Map<ProductVM>(product)).ToList();
+                var pagedData = data
+                   .Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
+                   .Take(validFilter.PageSize)
+                   .ToList();
+
+                var totalRecords = data.Count();
+                var pagedReponse = PaginationHelper.CreatePagedReponse<ProductVM>(pagedData, validFilter, totalRecords, route, "https://localhost:7279");
+                return Ok(pagedReponse);
             }catch (ValidationException ex)
             {
                 return Problem(ex.Message);
             }
         }
         [HttpGet("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Result<AppUserVM>))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BadRequestObjectResult))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(JsonResult))]
+        [ProducesResponseType(StatusCodes.Status302Found, Type = typeof(NotFoundObjectResult))]
         public async Task<ActionResult> Get(int id)
         {
             try
             {
-                return Ok();
+                var entity = (from users in (await _servicesUser.GetAllAppUsersWithRoles()).Data
+                 where users.Id == id select users).FirstOrDefault();
+                return Ok(entity);
             }
             catch (ValidationException ex)
             {
@@ -62,6 +85,9 @@ namespace API.Server.Controllers
             }
         }
         [HttpPost("Create")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BadRequestObjectResult))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(JsonResult))]
         public async Task<ActionResult> Create(AppUserVM user, string returnUrl = "")
         {
             try

@@ -1841,6 +1841,22 @@
           "buildMultiTargeting/MudBlazor.props": {}
         }
       },
+      "RestSharp/110.2.1-alpha.0.16": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "7.0.3"
+        },
+        "compile": {
+          "lib/net7.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Buffers/4.5.0": {
         "type": "package",
         "compile": {
@@ -2702,6 +2718,7 @@
           "Autofac.Extensions.DependencyInjection": "8.0.0",
           "Core.Domain": "1.0.0",
           "Infra.Persistence": "1.0.0",
+          "RestSharp": "110.2.1-alpha.0.16",
           "Service.Interface": "1.0.0",
           "System.Linq": "4.3.0"
         },
@@ -5134,6 +5151,26 @@
         "mudblazor.nuspec",
         "staticwebassets/MudBlazor.min.css",
         "staticwebassets/MudBlazor.min.js"
+      ]
+    },
+    "RestSharp/110.2.1-alpha.0.16": {
+      "sha512": "3+Nb8GEeWwYCx+DTb7t+msz7CZBFiInE7Ejd4a2iivqTTP/BhNB3vpXibK5NKLUHsn0z6MDFxVhzPNaXaT5yCA==",
+      "type": "package",
+      "path": "restsharp/110.2.1-alpha.0.16",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net471/RestSharp.dll",
+        "lib/net471/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/net7.0/RestSharp.dll",
+        "lib/net7.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.110.2.1-alpha.0.16.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
       ]
     },
     "System.Buffers/4.5.0": {

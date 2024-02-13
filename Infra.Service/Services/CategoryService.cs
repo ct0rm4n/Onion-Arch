@@ -1,10 +1,7 @@
 ﻿using AutoMapper;
 using Application.Repositories;
-using Wrappers;
 using ViewModels.Category;
 using Core.Domain.Entities.Concrates.Catalog;
-using Application.ViewModels.ToDo;
-using System.Collections.Generic;
 
 namespace Services
 {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WcERyB2pwrm5QMZKUQEyIFPWapTF5Hq/YtaLLL0WtdYGg+5qVo6pG9YHLBfcJYLmxAbBdWgtCTWPq5+sDTklKQ==",
+  "dgSpecHash": "gn63M4uEjHV+ymXSJITYsCYQvXlIMqElytQDCbgEi2EHWlpTb+7zoWYlLlDZBaNr28F1v2udzZ5UX3CHl2OkCQ==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Onion-Arch\\UI.Server\\UI.Server.csproj",
   "expectedPackageFiles": [
@@ -99,6 +99,7 @@
     "C:\\Users\\torman\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\torman\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\torman\\.nuget\\packages\\mudblazor\\6.2.2\\mudblazor.6.2.2.nupkg.sha512",
+    "C:\\Users\\torman\\.nuget\\packages\\restsharp\\110.2.1-alpha.0.16\\restsharp.110.2.1-alpha.0.16.nupkg.sha512",
     "C:\\Users\\torman\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\torman\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\torman\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
