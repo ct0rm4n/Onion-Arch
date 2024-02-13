@@ -135,3 +135,4 @@ D:\Projects\Onion-Arch\API.Server\obj\Debug\net8.0\API.Server.genruntimeconfig.c
 D:\Projects\Onion-Arch\API.Server\obj\Debug\net8.0\ref\API.Server.dll
 D:\Projects\Onion-Arch\API.Server\bin\Debug\net8.0\Application.Dto.dll
 D:\Projects\Onion-Arch\API.Server\bin\Debug\net8.0\Application.Dto.pdb
+D:\Projects\Onion-Arch\API.Server\bin\Debug\net8.0\RestSharp.dll

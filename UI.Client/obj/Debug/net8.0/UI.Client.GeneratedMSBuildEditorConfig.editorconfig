@@ -26,6 +26,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCYW5uZXJcQmFubmVySG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Projects/Onion-Arch/UI.Client/Components/Customer/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDdXN0b21lclxSZWdpc3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Projects/Onion-Arch/UI.Client/Components/Footer/Footer.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb290ZXJcRm9vdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

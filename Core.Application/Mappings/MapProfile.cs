@@ -12,6 +12,7 @@ using Application.ViewModels.Post;
 using Application;
 using Application.Dto.ViewModels.Product;
 using Application.Dto.ViewModels.Banner;
+using Application.Dto.DTOs;
 
 namespace Mapping
 {
@@ -104,7 +105,10 @@ namespace Mapping
             CreateMap<Post, PostSaveVM>()
                 .ReverseMap();
             #endregion
-
+            #region Currency Mapping
+            CreateMap<CurrencyLocale, CurrencyByLocaleDto>()
+                .ReverseMap();
+            #endregion
             #region BannerMapping
             CreateMap<Banner, BannerVM>()
                 .ReverseMap();

@@ -1010,6 +1010,17 @@
           }
         }
       },
+      "RestSharp/110.2.1-alpha.0.16": {
+        "dependencies": {
+          "System.Text.Json": "8.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/RestSharp.dll": {
+            "assemblyVersion": "110.2.1.0",
+            "fileVersion": "110.2.1.0"
+          }
+        }
+      },
       "System.Buffers/4.5.0": {},
       "System.CodeDom/4.4.0": {
         "runtime": {
@@ -1405,6 +1416,7 @@
           "Autofac.Extensions.DependencyInjection": "8.0.0",
           "Core.Domain": "1.0.0",
           "Infra.Persistence": "1.0.0",
+          "RestSharp": "110.2.1-alpha.0.16",
           "Service.Interface": "1.0.0",
           "System.Linq": "4.3.0"
         },
@@ -2113,6 +2125,13 @@
       "sha512": "sha512-q9OcxxoRc5zm3W5ktC+3iCRywnfp/DwVOLO1ykbXColLBb7ZFFu3SMfUnd3Egp5fz1n0GKW5yH3wtQ6mCz6YzQ==",
       "path": "mudblazor/6.2.2",
       "hashPath": "mudblazor.6.2.2.nupkg.sha512"
+    },
+    "RestSharp/110.2.1-alpha.0.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3+Nb8GEeWwYCx+DTb7t+msz7CZBFiInE7Ejd4a2iivqTTP/BhNB3vpXibK5NKLUHsn0z6MDFxVhzPNaXaT5yCA==",
+      "path": "restsharp/110.2.1-alpha.0.16",
+      "hashPath": "restsharp.110.2.1-alpha.0.16.nupkg.sha512"
     },
     "System.Buffers/4.5.0": {
       "type": "package",
