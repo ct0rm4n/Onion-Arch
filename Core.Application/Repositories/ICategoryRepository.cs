@@ -9,6 +9,7 @@ namespace Application.Repositories
         public Task<Category> GetMainCategoryWithAllChildren();        
         public Task<Category> GetSpesificCategoryWithChildren(int id);
         public Task<List<Category>> GetChildrensChildren(Category category);
+        public Task<List<Category>> GetAllCategoryWithAllChildren();
 
     }
 }

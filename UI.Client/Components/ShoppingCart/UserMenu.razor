@@ -1,0 +1,49 @@
+﻿
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+
+<ul class="dropdown">
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle btn btn-secondary dropdown-toggle user-button" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-menu-button"></i>
+        </a>
+        <ul class="dropdown-menu">
+            <AuthorizeView>
+                <Authorized>
+                    <li><a href="profile" class="dropdown-item">Profile</a></li>
+                    <li><a href="orders" class="dropdown-item">Orders</a></li>
+                    <li><hr /></li>
+
+                    <li><button class="dropdown-item" @onclick="Logout">Logout</button></li>
+                </Authorized>
+                <NotAuthorized>
+                    <li><a href="login?returnUrl=@NavigationManager.ToBaseRelativePath(NavigationManager.Uri)" class="dropdown-item">Login</a></li>
+                    <li><a href="register" class="dropdown-item">Register</a></li>
+                </NotAuthorized>
+            </AuthorizeView>
+        </ul>
+    </li>
+</ul>
+
+@code {
+    private bool showUserMenu = false;
+
+    private string UserMenuCssClass => showUserMenu ? "show-menu" : null;
+
+    private void ToggleUserMenu()
+    {
+        showUserMenu = !showUserMenu;
+    }
+
+    private async Task HideUserMenu()
+    {
+        await Task.Delay(200);
+        showUserMenu = false;
+    }
+
+    private async Task Logout()
+    {
+        await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        NavigationManager.NavigateTo("");
+    }
+}

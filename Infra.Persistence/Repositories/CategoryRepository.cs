@@ -17,11 +17,12 @@ namespace Infraestrutura.Repositories
             Category? category = await GetActivesAsIQueryable()
                                        .Include(x => x.Children)
                                        .FirstOrDefaultAsync(x => x.ParentID == null);
-
-            //foreach (Category child in category.Children)
-            //    await LoadChildren(child);
-
             return category;
+        }
+        public async Task<List<Category>> GetAllCategoryWithAllChildren()
+        {
+            List<Category>? Listcategory = (GetActivesAsIQueryable().ToList<Category>());
+            return Listcategory;
         }
 
         public async Task<Category> GetSpesificCategoryWithChildren(int id)

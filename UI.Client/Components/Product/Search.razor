@@ -1,0 +1,15 @@
+﻿@page "/record-audio"
+@layout UI.Client.Layout.DefaultLayout
+@rendermode InteractiveServer
+
+<h1>Record and Save Audio</h1>
+
+<button @onclick="StartRecording" disabled="@_isRecording">Start Recording</button>
+<button @onclick="StopAndSaveRecording" >Stop and Save</button>
+
+@if (_isRecording) {
+    <p>Recording...</p>
+}
+else{
+    <p>Click "Start Recording" to begin.</p>
+}

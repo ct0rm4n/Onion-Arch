@@ -1,0 +1,62 @@
+﻿@using Application.Dto.Wrappers
+@using ViewModels.Category
+
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Blazor Ecommerce</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                Home
+            </NavLink>
+        </div>
+        @if (list is not null)
+        {
+            @foreach (var category in list)
+            {
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="@category.Url">
+                        @category.CategoryName
+                    </NavLink>
+                </div>
+            }
+        }
+    </nav>
+</div>
+
+@code {
+    [Inject]
+    IConfiguration Configuration { get; set; }
+    private readonly HttpClient _client = new HttpClient();
+    public List<CategoryVM> list { get; set; }
+    int PageIndex = 0;
+    int TotalPages = 1;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var respose = new PagedResponse<List<CategoryVM>>(null, 0, int.MaxValue);
+        if (list is null)
+        {
+            PageIndex = 1;
+            respose = await _client.GetFromJsonAsync<PagedResponse<List<CategoryVM>>>($"{Configuration["ApiRest"]}api/category/getall?PageSize=6");
+            list = respose.Data;
+            TotalPages = respose.TotalPages;
+        }
+        await base.OnInitializedAsync();
+    }
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

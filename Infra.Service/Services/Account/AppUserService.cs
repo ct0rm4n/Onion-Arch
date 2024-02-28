@@ -12,6 +12,7 @@ using Wrappers;
 using Domain.Entities.Concrates;
 using Domain.Enums;
 using System.Collections.Generic;
+using ViewModels.AppUserRole;
 
 namespace Services
 {
@@ -19,18 +20,15 @@ namespace Services
     {
         protected readonly UserManager<AppUser> _userManager;
         protected readonly SignInManager<AppUser> _signInManager;
-        //protected readonly RoleManager<AppRole> _roleManager;
         protected readonly IHttpContextAccessor _httpContextAccessor;
         //protected readonly IEMailService _eMailService;
         protected readonly IAppUserRepository _appUserRepository;
 
-        public AppUserService(IGenericRepository<AppUser> repository, IMapper mapper, UserManager<AppUser> userManager, /*IEMailService eMailService,*/ SignInManager<AppUser> signInManager, IHttpContextAccessor httpContextAccessor, IAppUserRepository appUserRepository) : base(repository, mapper)
+        public AppUserService(IGenericRepository<AppUser> repository, IMapper mapper, SignInManager<AppUser> signInManager, IHttpContextAccessor httpContextAccessor, IAppUserRepository appUserRepository) : base(repository, mapper)
         {
-            _userManager = userManager;
            // _eMailService = eMailService;
             _userManager.RegisterTokenProvider(TokenOptions.DefaultProvider, new EmailTokenProvider<AppUser>());
             _signInManager = signInManager;
-            //_roleManager = roleManager;
             _httpContextAccessor = httpContextAccessor;
             _appUserRepository = appUserRepository;
         }
@@ -152,9 +150,9 @@ namespace Services
             appUserVM.AppRoleVMs = roles;
             return Result<AppUserVM>.Success(appUserVM);
         }
-
+        
         ////get all roles 
-        //public async Task<Result<List<AppRoleVM>>> GetAllRoles()
+        // public async Task<Result<List<AppRoleVM>>> GetAllRoles()
         //{
         //    List<AppRole> appRoles = await _roleManager.Roles.ToListAsync();
         //    List<AppRoleVM> appRoleVMs = _mapper.Map<List<AppRoleVM>>(appRoles);
